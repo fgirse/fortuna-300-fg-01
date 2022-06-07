@@ -143,9 +143,9 @@ background-color: #ffcc00;
 
 .shape-lighthouse {
   float: left;
-  shape-outside: url('/Lighthouse3.png');
-  height: 400px;
-                                     width: 500px;  
+  shape-outside: url('/Lighthouse4.png');
+  height: 200px;
+  width: 230px;  
   transform: translateX(-2rem);
 }
 

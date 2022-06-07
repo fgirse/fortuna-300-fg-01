@@ -44,7 +44,7 @@ export default function block() {
                                 <div className=' rounded-3xl bg-blue-900/10 lg:w-full'>
       
                                       <div className='flex flex-col items-center justify-start'>
-                                              <p className="py-6 px-12 mb-2 text-center text-4xl font-bold uppercase tracking-tight text-yellow-500 dark:text-white md:text-4xl xl:text-5xl">öffnungzeiten</p>
+                                              <p className="py-6 px-12 text-center text-4xl font-bold uppercase tracking-tight text-yellow-500 dark:text-white md:text-4xl xl:text-5xl">öffnungzeiten</p>
                                               <p className="text-xl sm:text-xl text-center text-gray-300 md:text-base lg:text-xl">Montag-Donnerstag: 18 bis 24 Uhr</p>
                                               <p className="text-xl sm:text-1xl xl:text-center  text-gray-300 md:text-base lg:text-xl">Freitag und Samstag: 15 bis 03 Uhr</p>
                                               <p className="text-xl sm:text-1xl xl:text- text-center   text-gray-300 md:text-base lg:text-xl">Sonntag: Ruhetag</p>
@@ -61,15 +61,15 @@ export default function block() {
                                               <h5 className="py-6 mb-3 text-5xl text-center font-sans font-bold tracking-tight text-yellow-500 dark:text-white xl:text-6xl">
                                                        "Moin Moin Moin"
                                               </h5>
-                                              <p className="w-full p-12  z-5 text-xs text-justify mb-1 font-normal text-gray-300 dark:text-gray-400 lg:text-[1.3rem] xl:leading-10 xl:text-[2.33rem]">
-                                              <img className="shape-lighthouse w-60 h-52 lg:w-6/12 lg:h-3/5" src='/lighthouse3.png' alt='leuchtturm illustration' layout='responsive'/>
+                                              <p className="w-full  z-5 text-[.75rem] text-justify mb-1 font-normal text-gray-300 dark:text-gray-400 lg:text-[1.3rem] xl:leading-10 xl:text-[2.33rem]">
+                                              <img className="shape-lighthouse w-24 h-48 lg:w-6/12 lg:h-3/5" src='/lighthouse4.png' alt='leuchtturm illustration' layout='responsive'/>
       
                                                 In Hommage an eine typische Kiez-Kneipe auf St.Pauli, haben wir im Herzen von
                                                 Freiburg ein Lokal eröffnet, welches es so südlich der Elbe wohl kein zweites
                                                 Mal gibt. Ausgebaut im Stile eines Schiffrumpfes, ist der im Herzen der Altstadt
                                                 gelegene Rettungsanker-Freiburg idealer Treffpunkt um nach Feiereabend etwas zu entspannen und nette Leute kennenzulernen. Wir sind stolz auf
                                                 unser buntes, internationales Publikum. Unser Rettungsanker ist auch ideale
-                                                Location zur Durchführung Ihres privaten oder geschäftlichen Events <Link className="w-20 h-8 bg-slate-700 hover:bg-sky-900 cursor-pointer rounded-xl px-2 "><span className='text-xl text-center'><a href="./events">INFO</a></span> </Link>  Sprechen
+                                                Location zur Durchführung Ihres privaten oder geschäftlichen Events <Link className="w-20 h-16 bg-slate-500 hover:bg-sky-900 text-center text-xl cursor-pointer rounded-xl px-2 "><span className='text-xl text-center'><a href="./events">INFO</a></span> </Link>  Sprechen
                                                 Sie uns an oder kontaktieren Sie uns vor Ort oder schreiben Sie uns eine email.
                                                 Wir freuen uns Sie im Rettungsanker begrüsssen zu dürfen <br />
                                                 <br />
@@ -78,7 +78,7 @@ export default function block() {
                                               </div>
                                               <button
                                             type="button"
-                                            className="mt- relative w-3/12 text-2xl flex flex-col items-center justify-center rounded-lg border border-transparent bg-orange-700 hover:bg-yellow-700 px-4 py-2 font-sans lg:text-3xl font-medium text-gray-200 hover:bg-orange-700- focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 md:text-3xl xl:mt-2 lg:mb-20"
+                                            className="mt-6 relative w-6/12 text-2xl flex flex-col items-center justify-center rounded-lg border border-transparent bg-orange-700 hover:bg-yellow-700 px-4 py-2 font-sans lg:text-3xl font-medium text-gray-200 hover:bg-orange-700- focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 md:text-3xl xl:mt-2 lg:mb-20"
                                           >
                                             <svg className="w-16 lg:w-20 " fill="#ffffff" viewBox="0 0 20 20"  xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
                                             <a className="ui btn" href="mailto:rettungsanker-freiburg@gmx.de?">
@@ -142,7 +142,7 @@ export default function block() {
 
 <section className='py-12 w-full mx-auto bg-slate-900'>
 
-<h1 className='text-8xl headingF text-center text-yellow-600 lg:-mt-96 lg:text-[12rem]'>Die Kneipe</h1>
+<h1 className='text-7xl headingF text-center text-yellow-600 lg:-mt-[58vh] lg:text-[12rem]'>Die Kneipe</h1>
 <div  className=" lg:w-9/12 mx-auto grid grid-cols-1  lg:gap-y-10 lg:grid-cols-2 lg:justify-center ">
 
                                 <div className='itemA p-4 bg-white/5  rounded-3xl lg:w-9/12  '>
@@ -208,7 +208,7 @@ export default function block() {
 </section>            {/*========================================================== section F ==============================================================*/}
 <section className="bg-slate-900">          
 <ThemeProvider theme={theme}>
-              <div className="-mt-1 mx-auto p-16 lg:mt-20 lg:w-11/12 lg:max-w-8xl xl:mt-[58vh] grid grid-cols-1 justify-center items-center md:p-6  md:grid-cols-3 md:justify-around lg:item11s-center lg:gap-x-5">
+              <div className="-mt-1 mx-auto p-16 lg:w-11/12 lg:max-w-8xl xl:mt-[vh] grid grid-cols-1 justify-center items-center md:p-6  md:grid-cols-3 md:justify-around lg:item11s-center lg:gap-x-5">
                 <Card
                   className="justify-self-center"
                   mb={3}
@@ -315,7 +315,7 @@ export default function block() {
 
 
 
-          <section className=" bg-slate-900 mt-[1vh] w-full mx-auto min-h-[100vh] h-[100vh] md:w-full md:-mt-[36] md:mx-auto lg:mt-[20vh]">
+          <section className=" bg-slate-900 py-16 w-full mx-auto md:w-full md:mx-auto lg:py-20">
           <div className="h-36 w-5/12 lg:w-3/12 lg:p-8 lg:-mt-48 ">
            <Image                                                                                                                                                                
              src="/Albers-white.png"
@@ -333,7 +333,7 @@ export default function block() {
                       
                       
                       
-                     <div className="mx-auto w-9/12 lg:w-5/12 border-4  border-slate-100 lg:mt-[16vh]">
+                     <div className="mx-auto w-9/12 lg:w-5/12 border-4  border-slate-100 lg:mt-[5vh]">
                          
                            <Slider/>
                              
@@ -357,9 +357,9 @@ export default function block() {
          {/*========================================================== section F ende==============================================================*/}
          
 
-           <hr className="w-full mt-12 mx-auto md:w-11/12 lg:mt-96 "/>
+           <hr className="w-full mt-[40vh] mx-auto md:w-11/12 lg:mt-0 "/>
 {/*========================================================== section G =================================================*/}
-         <section className="-mt-[54vh] flex flex-col justify-end items-between xl:mt-[50vh] 2xl:-mt-48 bg-slate-900">
+         <section className="-mt-[54vh] flex flex-col justify-end items-between lg:mt-1 xl:py-36 bg-slate-900">
          <div className="mt-6 md:mt-20 mx-auto md:w-2/12 lg:mx-auto lg:mt-6">
                <LogoNeu className="w-48 h-48 lg:w-60 lg:h-60"></LogoNeu>
                  
@@ -368,7 +368,7 @@ export default function block() {
            
              
 
-             <h1 className="headingB text-white mt-2 text-[3rem] text-center lg:headingA lg:text-[6rem] lg:text-gray-600">                                                                           
+             <h1 className="headingB text-white text-[3rem] text-center lg:headingA lg:text-[6rem] lg:text-gray-600">                                                                           
                Impressum
              </h1>
              <div>

@@ -34,7 +34,7 @@ export default function Footer() {
           <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size="6" />
           <SocialIcon kind="twitter" href={siteMetadata.twitter} size="6" />
         </div>
-        <div className="mb-2 flex space-x-2 text-sm text-gray-100 dark:text-gray-400">
+        <div className=" flex space-x-2 text-sm text-gray-100 dark:text-gray-400">
           <div>{siteMetadata.author}</div>
           <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
@@ -46,10 +46,10 @@ export default function Footer() {
           
           </Link>
         </div>
-        <div className='w-full flex flex-col justify-end items-start'>
+        <div className='w-full flex flex-col justify-start items-start'>
             
                   
-                <img className="ml-12 transform translate-y-6 lg:transform lg:translate-y-36 relative z-50" src="/lighthouse3.png" height="30%" width="20%" alt="Illustration"/>
+                <img className="ml-12 transform translate-y-6 lg:transform lg:translate-x-60 lg:transform lg:translate-y-36 relative z-50" src="/lighthouse3.png" height="0%" width="20%" alt="Illustration"/>
                 <Wave className=""></Wave> 
             
        
