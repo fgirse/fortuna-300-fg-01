@@ -10,6 +10,7 @@ import Flensburger from "../components/icons/svg/SVGFlensburger";
 import Ganter from "../components/icons/svg/SVGGanter";
 import Astra from "../components/icons/svg/SVGAstra";
 import sketchy from "theme-ui-sketchy-preset";
+import Karussel from '../components/Caroussel'
 import { ThemeProvider, Card, Text } from "theme-ui"; 
 
 const theme = {
@@ -25,7 +26,7 @@ export default function block() {
   return (
     <>
      <section className="mx-auto w-full flex flex-col">
-       <div className="mx-auto bg-slate-900/70 bg-[url('/collage02.png')] w-full h-[100vh] bg-top-right bg-[length:100%_77%] bg-no-repeat lg:bg-[url('/Hero.png')] lg:bg-[length:100%_75%] lg:bg-slate-900 lg:bg-no-repeat lg:w-full lg:h-screen">    
+       <div className="mx-auto bg-slate-900/70 bg-[url('/collage02.png')] w-full h-[100vh] bg-top-right bg-[length:100%_77%] bg-no-repeat lg:bg-[url('/test03.png')] lg:bg-[length:100%_75%] lg:bg-slate-900 lg:bg-no-repeat lg:w-full lg:h-screen">    
        </div>
              
     
@@ -143,10 +144,13 @@ export default function block() {
 <section className='py-12 w-full mx-auto bg-slate-900'>
 
 <h1 className='text-7xl headingF text-center text-yellow-600 lg:-mt-[58vh] lg:text-[12rem]'>Die Kneipe</h1>
-<div  className=" lg:w-9/12 mx-auto grid grid-cols-1  lg:gap-y-10 lg:grid-cols-2 lg:justify-center ">
+<div className="mx-auto w-full border-8 border-slate-100">
+  <Image src="/Hero.png" alt="illustration" height="600" width="1400" layout="responsive"/>
+</div>
+<div  className=" flex flex-col items-center lg:flex-row lg:justify-center ">
 
-                                <div className='itemA p-4 bg-white/5  rounded-3xl lg:w-9/12  '>
-                                            <p className='mx-auto w-full px-6 py-4  leading-8 text-justify rounded-2xl text-slate-300 lg:w-full lg:text-[1.33rem] '>
+                                <div className=' p-4 bg-white/5  rounded-3xl lg:w-9/12  '>
+                                            <p className='mx-auto w-full px-6 py-4  text-[.95rem] leading-4 lg:leading-8 text-justify rounded-2xl text-slate-300 lg:w-full lg:text-[1.33rem] '>
 
                                                       <img className="shape" src='/astraurtyp2.png' width='300' height='250' alt='astra-illu' layout='responsive'/>
 
@@ -157,8 +161,8 @@ export default function block() {
 
                                 </div> 
 
-                                <div className='itemB p-4 bg-white/5 rounded-3xl w-9/12  '>
-                                            <p className='mx-auto w-full px-6 py-4  leading-8 text-justify rounded-2xl text-slate-300 lg:w-full lg:text-[1.5rem] '>
+                                <div className=' p-4 bg-white/5 rounded-3xl w-9/12  '>
+                                <p className='mx-auto w-full px-6 py-4  text-[.95rem] leading-4 lg:leading-8 text-justify rounded-2xl text-slate-300 lg:w-full lg:text-[1.33rem] '>
 
                                             <img className="shape-fussball" src='/fussball.png' width='120' height='120' alt='fussball-illu' layout='responsive'/>
 
@@ -174,19 +178,19 @@ export default function block() {
                                
 
 
-                                <div className=' itemC p-4 bg-white/5 rounded-3xl w-9/12 mb-8'>
-                                            <p className='mx-auto  w-8/12  px-6 py-4  leading-8 text-sm text-justify rounded-2xl text-slate-300 lg:w-full lg:text-[1.5rem] '>
+                                <div className=' p-4 bg-white/5 rounded-3xl w-9/12 mb-8'>
+                                <p className='mx-auto w-full px-6 py-4  text-[.95rem] leading-4 lg:leading-8 text-justify rounded-2xl text-slate-300 lg:w-full lg:text-[1.33rem] '>
 
                                                       <img className="shape-albers" src='/Albers-white.png' width='300' height='250' alt='albers-illu' layout='responsive'/>
 
-                                            Hans Phillip August Albers (* 22.September 1891 in Hamburg , 24. Juli 1960 in Berg, Bayern) war ein deutscher Schauspieler und Sönger, der als "blonder Hans" zum Volksidol wurde. Zu den bekanntesten Spielfilmen in denen er mitwirkte gehören "der Mann, der Sherlock Holmes war" (1937), "Münchhausen" (1943), "die grosse Freiheit Nr.7" (1943) sowie "Auf fer Reeperbahn Nachts um halb eins" "
+                                            Hans Phillip August Albers (* 22.September 1891 in Hamburg , 24. Juli 1960 in Berg, Bayern) war ein deutscher Schauspieler und Sänger, der als "blonder Hans" zum Volksidol wurde. Zu den bekanntesten Spielfilmen in denen er mitwirkte gehören "der Mann, der Sherlock Holmes war" (1937), "Münchhausen" (1943), "die grosse Freiheit Nr.7" (1943) sowie "Auf fer Reeperbahn Nachts um halb eins" "
                                                   <br/> <br/>
                                           </p>
 
                                 </div> 
 
                                 <div className='itemD  p-4 bg-white/5 rounded-3xl w-9/12 mb-8'>
-                                            <p className='mx-auto  w-8/12  px-6 py-4  leading-7 text-sm text-justify rounded-2xl text-slate-300 lg:w-full lg:text-[1.5rem] '>
+                                <p className='mx-auto w-full px-6 py-4  text-[.95rem] leading-4 lg:leading-8 text-justify rounded-2xl text-slate-300 lg:w-full lg:text-[1.33rem] '>
 
                                             <img className="shape-astraballon" src='/Astraballons.png' width='120' height='120' alt='astra-illu' layout='responsive'/>
 
@@ -307,7 +311,7 @@ export default function block() {
           {/*========================================================== section E =ende ==============================================================*/}            
 
                   
-
+                  
 
 
 
@@ -333,9 +337,9 @@ export default function block() {
                       
                       
                       
-                     <div className="mx-auto w-9/12 lg:w-5/12 border-4  border-slate-100 lg:mt-[5vh]">
+                     <div className="mx-auto   border-4  border-slate-100 lg:w-9/12 lg:mt-[5vh]">
                          
-                           <Slider/>
+                           <Karussel/>
                              
                                                                                                                                                                                                                                       
 
@@ -347,10 +351,6 @@ export default function block() {
 
                      </section>
                 
-                   
-                    
-                       
-                       
                        
                        
          
