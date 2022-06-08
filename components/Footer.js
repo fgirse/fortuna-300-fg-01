@@ -5,7 +5,7 @@ import SocialIcon from '@/components/social-icons'
 import Wave from '/public/waves.svg'
 import Image from 'next/image'
 import Astra from'../components/icons/svg/SVGAstra'
-import LogoLeckerLaden from'../components/icons/svg/SVGLogoLeckerLaden'
+import LogoLeckerLaden from'../components/icons/svg/SVGLogoLeckerladen'
 import Flensburger from'../components/icons/svg/SVGFlensburger'
 
 
