@@ -1,121 +1,46 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable prettier/prettier */
-import Layout from "../components/Layout"
-import Image from "next/image"
+import Layout from '../components/Layout'
+import Image from 'next/image'
 
 
-export default function CarouselPage() {
-    return (
-        <Layout>
-            <div id="carouselExampleCaptions" className="carousel slide relative" data-bs-ride="carousel">
-                <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
-                    <button
-                        type="button"
-                        data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide-to="0"
-                        className="active"
-                        aria-current="true"
-                        aria-label="Slide 1"
-                    ></button>
-                    <button
-                        type="button"
-                        data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide-to="1"
-                        aria-label="Slide 2"
-                    ></button>
-                    <button
-                        type="button"
-                        data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide-to="2"
-                        aria-label="Slide 3"
-                    ></button>
-                </div>
-                <div className="carousel-inner relative w-full overflow-hidden">
-                    <div className="carousel-item active relative float-left w-full">
-                        <Image
-                            src="/Impress01.jpg"
-                            className="block w-full"
-                            alt="..." width={1500} height={423}
-                        />
-                        <div className="carousel-caption hidden md:block absolute text-center">
-                            <h5 className="text-xl text-yellow-500">Impression 02</h5>
-                            <p>Live Übertragung in der Sportarena</p>
-                        </div>
-                    </div>
-                    <div className="carousel-item relative float-left w-full">
-                        <Image
-                            src="/Impress02.jpg"
-                            className="block w-full"
-                            alt="..." width={1500} height={423}
-                        />
-                        <div className="carousel-caption hidden md:block absolute text-center">
-                            <h5 className="text-xl text-yellow-500">Impression02</h5>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div className="carousel-item relative float-left w-full">
-                        <Image
-                            src="/Impress03.jpg"
-                            className="block w-full"
-                            alt="..." width={1500} height={423}
-                        />
-                        <div className="carousel-caption hidden md:block absolute text-center">
-                            <h5 className="text-xl text-yellow-500">Impression 03</h5>
-                            <p>Live Übertragung in der Sportarena</p>
-                        </div>
-                    </div>
-                    <div className="carousel-item relative float-left w-full">
-                        <Image
-                            src="/Impress04.jpg"
-                            className="block w-full"
-                            alt="..." width={1500} height={423}
-                        />
-                        <div className="carousel-caption hidden md:block absolute text-center">
-                            <h5 className="text-xl text-yellow-500">Impression 04</h5>
-                            <p>Live Übertragung in der Sportarena</p>
-                        </div>
-                    </div>
-                    <div className="carousel-item relative float-left w-full">
-                        <Image
-                            src="/Impress05.jpg"
-                            className="block w-full"
-                            alt="..." width={1500} height={423}
-                        />
-                        <div className="carousel-caption hidden md:block absolute text-center">
-                            <h5 className="text-xl text-yellow-500">Impression 03</h5>
-                            <p>Live Übertragung in der Sportarena</p>
-                        </div>
-                    </div>
-                    <div className="carousel-item relative float-left w-full">
-                        <Image
-                            src="/Impress06.jpg"
-                            className="block w-full"
-                            alt="..." width={1500} height={423}
-                        />
-                        <div className="carousel-caption hidden md:block absolute text-center">
-                            <h5 className="text-xl text-yellow-500">Impression 03</h5>
-                            <p>Live Übertragung in der Sportarena</p>
-                        </div>
-                    </div>
-                </div>
-                <button
-                    className="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
-                    type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev"
-                >
-                    <span className="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                </button>
-                <button
-                    className="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
-                    type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next"
-                >
-                    <span className="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                </button>
-            </div>
-        </Layout>
-    )
-}
+
+    <div className="container">
+    <h2>Carousel Example</h2>  
+    <div id="myCarousel" className="carousel slide" data-ride="carousel">
+      {/* Indicators */}
+      <ol className="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+  
+      {/* Wrapper for slides */}
+      <div className="carousel-inner">
+        <div className="item active">
+          <img src="/Impress01.jpg" alt="Los Angeles" style={{width:"100%"}}/>
+        </div>
+  
+        <div className="item">
+          <img src="Impress02.jpg" alt="Chicago" style={{width:"100%"}}/>
+        </div>
+      
+        <div className="item">
+          <img src="Impress03.jpg" alt="New york" style={{width:"100%"}}/>
+        </div>
+      </div>
+  
+      {/* Left and right controls */}
+      <a className="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span className="glyphicon glyphicon-chevron-left"></span>
+        <span className="sr-only">Previous</span>
+      </a>
+      <a className="right carousel-control" href="#myCarousel" data-slide="next">
+        <span className="glyphicon glyphicon-chevron-right"></span>
+        <span className="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+   
+   
+

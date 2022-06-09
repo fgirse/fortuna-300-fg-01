@@ -4,26 +4,20 @@ import siteMetadata from '@/data/siteMetadata'
 import SocialIcon from '@/components/social-icons'
 import Wave from '/public/waves.svg'
 import Image from 'next/image'
-import Astra from'../components/icons/svg/SVGAstra'
-import LogoLeckerLaden from'../components/icons/svg/SVGLogoLeckerladen'
-import Flensburger from'../components/icons/svg/SVGFlensburger'
-
-
-
+import Astra from '../components/icons/svg/SVGAstra'
+import LogoLeckerLaden from '../components/icons/svg/SVGLogoLeckerladen'
+import Flensburger from '../components/icons/svg/SVGFlensburger'
 
 export default function Footer() {
   return (
     <footer>
-      <div className='flex flex-col justify-center bg-amber-800 items-center '>
-          <h1 className='mt-3 text-yellow-400 text-center text-3xl'>Unsere Partner</h1>
-                    <div className="w-full flex flex-row justify-evenly items-center lg:flex-row lg:justify-center lg:gap-10 lg:items-center">
-                    <Astra className="w-16 h-16 lg:w-36 lg:h-36"/>
-                    <LogoLeckerLaden className="w-24 h-16 lg:w-48 lg:h-44"/>
-                    <Flensburger className="w-12 h-12 lg:w-24 lg:h-24"/>
-
-                    </div>
-                    
-
+      <div className="flex flex-col items-center justify-center bg-amber-800 ">
+        <h1 className="mt-3 text-center text-3xl text-yellow-400">Unsere Partner</h1>
+        <div className="flex w-full flex-row items-center justify-evenly lg:flex-row lg:items-center lg:justify-center lg:gap-10">
+          <Astra className="h-16 w-16 lg:h-36 lg:w-36" />
+          <LogoLeckerLaden className="h-16 w-24 lg:h-44 lg:w-48" />
+          <Flensburger className="h-12 w-12 lg:h-24 lg:w-24" />
+        </div>
       </div>
       <div className="flex flex-col items-center bg-amber-800">
         <div className="mt-5 mb-3 flex space-x-4">
@@ -42,19 +36,18 @@ export default function Footer() {
           <Link href="/">{siteMetadata.title}</Link>
         </div>
         <div className=" text-sm text-gray-100 dark:text-gray-400">
-          <Link href="https://github.com/timlrx/tailwind-nextjs-starter-blog">
-          
-          </Link>
+          <Link href="https://github.com/timlrx/tailwind-nextjs-starter-blog"></Link>
         </div>
-        <div className='w-full flex flex-col justify-start items-start'>
-            
-                  
-                <img className="ml-12 transform translate-y-6 lg:transform lg:translate-x-60 lg:transform lg:translate-y-36 relative z-50" src="/lighthouse3.png" height="0%" width="20%" alt="Illustration"/>
-                <Wave className=""></Wave> 
-            
-       
+        <div className="flex w-full flex-col items-start justify-start">
+          <img
+            className="relative z-50 ml-12 translate-y-6 transform lg:translate-x-60 lg:translate-y-36 lg:transform lg:transform"
+            src="/lighthouse3.png"
+            height="0%"
+            width="20%"
+            alt="Illustration"
+          />
+          <Wave className=""></Wave>
         </div>
-      
       </div>
     </footer>
   )

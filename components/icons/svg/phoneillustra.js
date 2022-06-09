@@ -63,4 +63,3 @@ const SvgPhoneillustra = (props) => (
 )
 
 export default SvgPhoneillustra
-

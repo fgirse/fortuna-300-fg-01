@@ -29,4 +29,3 @@ const SvgWave = (props) => (
 )
 
 export default SvgWave
-

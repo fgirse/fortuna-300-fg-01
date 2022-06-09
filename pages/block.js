@@ -1,422 +1,376 @@
 /* eslint-disable prettier/prettier */
-import React from "react"
-import Modale03 from "@/components/Modale/Modal03"
+import React from 'react'
+import Modale03 from '@/components/Modale/Modal03'
 import Hero2Animated from '../components/Animationen/HeroTimeline'
 import Link from '@/components/Link'
-import Image from "next/image"
-import Slider from "../components/swiper"
+import NukaCarousel from '../components/NukaCar'
+import Image from 'next/image'
 import LogoNeu from '../components/icons/svg/Logo_neu.svg'
-import Flensburger from "../components/icons/svg/SVGFlensburger";
-import Ganter from "../components/icons/svg/SVGGanter";
-import Astra from "../components/icons/svg/SVGAstra";
-import sketchy from "theme-ui-sketchy-preset";
-import Karussel from '../components/Caroussel'
-import { ThemeProvider, Card, Text } from "theme-ui"; 
+import Flensburger from '../components/icons/svg/SVGFlensburger'
+import Ganter from '../components/icons/svg/SVGGanter'
+import Astra from '../components/icons/svg/SVGAstra'
+import sketchy from 'theme-ui-sketchy-preset'
+import { ThemeProvider, Card, Text } from 'theme-ui'
 
 const theme = {
-  ...sketchy
-};
-
+  ...sketchy,
+}
 
 export default function block() {
-
- 
-  
-  
   return (
     <>
-     <section className="mx-auto w-full flex flex-col">
-       <div className="mx-auto bg-slate-900/70 bg-[url('/collage02.png')] w-full h-[100vh] bg-top-right bg-[length:100%_77%] bg-no-repeat lg:bg-[url('/test03.png')] lg:bg-[length:100%_75%] lg:bg-slate-900 lg:bg-no-repeat lg:w-full lg:h-screen">    
-       </div>
-             
-    
-            
-
-       
-           </section>
-                                             
-                                        
+      <section className="mx-auto flex w-full flex-col">
+        <div className="bg-top-right mx-auto h-[100vh] w-full bg-slate-900/70 bg-[url('/collage02.png')] bg-[length:100%_77%] bg-no-repeat lg:h-screen lg:w-full lg:bg-slate-900 lg:bg-[url('/Test03.png')] lg:bg-[length:100%_75%] lg:bg-no-repeat"></div>
+      </section>
       {/*======================================================================= SECTION ÖFFNUNGSZEITEN BEGRÜSSUG ===========================================================*/}
+      <section className=" mx-auto -mt-[26vh] w-full bg-slate-900 lg:mt-[12vh] 2xl:mt-5">
+        {/*======================================================================= FLEXBOX ===========================================================*/}
+        <div className=" h-min-  mx-auto flex w-11/12 flex-col items-center justify-center lg:-mt-[12vh] lg:flex-row lg:items-start lg:justify-start lg:gap-20 xl:-mt-60">
+          <div className=" roundfulled-3xl bg-blue-900/10 lg:w-full">
+            <div className="flex flex-col items-center justify-start">
+              <p className="py-6 px-12 text-center text-4xl font-bold uppercase tracking-tight text-yellow-500 dark:text-white md:text-4xl xl:text-5xl">
+                öffnungzeiten
+              </p>
+              <p className="text-center text-xl text-gray-300 sm:text-xl md:text-base lg:text-xl">
+                Montag-Donnerstag: 18 bis 24 Uhr
+              </p>
+              <p className="sm:text-1xl text-xl text-gray-300  md:text-base lg:text-xl xl:text-center">
+                Freitag und Samstag: 15 bis 03 Uhr
+              </p>
+              <p className="sm:text-1xl xl:text- text-center text-xl   text-gray-300 md:text-base lg:text-xl">
+                Sonntag: Ruhetag
+</p>
+                          </div>
+          </div>
 
-<section className=" mx-auto -mt-[26vh] w-full lg:mt-[12vh] 2xl:mt-5 bg-slate-900">
-      
-      {/*======================================================================= FLEXBOX ===========================================================*/}      
-            <div className=" mx-auto  w-11/12 h-min-full flex flex-col items-center justify-center lg:flex-row lg:gap-20 lg:justify-start lg:items-start lg:-mt-[12vh] xl:-mt-60">
-                                <div className=' rounded-3xl bg-blue-900/10 lg:w-full'>
-      
-                                      <div className='flex flex-col items-center justify-start'>
-                                              <p className="py-6 px-12 text-center text-4xl font-bold uppercase tracking-tight text-yellow-500 dark:text-white md:text-4xl xl:text-5xl">öffnungzeiten</p>
-                                              <p className="text-xl sm:text-xl text-center text-gray-300 md:text-base lg:text-xl">Montag-Donnerstag: 18 bis 24 Uhr</p>
-                                              <p className="text-xl sm:text-1xl xl:text-center  text-gray-300 md:text-base lg:text-xl">Freitag und Samstag: 15 bis 03 Uhr</p>
-                                              <p className="text-xl sm:text-1xl xl:text- text-center   text-gray-300 md:text-base lg:text-xl">Sonntag: Ruhetag</p>
-                                              
-                                      </div>
-      
-                                </div>
-      
-                                <div className=' w -2/3 lg:bg--900/10'>
-                                  
-                                <div className='flex flex-col items-center lg:flex-row justify-center'>
-                                              
-                                              <div className="flex flex-col lg:flex">
-                                              <h5 className="py-6 mb-3 text-5xl text-center font-sans font-bold tracking-tight text-yellow-500 dark:text-white xl:text-6xl">
-                                                       "Moin Moin Moin"
-                                              </h5>
-                                              <p className="w-full  z-5 text-[.75rem] text-justify mb-1 font-normal text-gray-300 dark:text-gray-400 lg:text-[1.3rem] xl:leading-10 xl:text-[2.33rem]">
-                                              <img className="shape-lighthouse w-24 h-48 lg:w-6/12 lg:h-3/5" src='/lighthouse4.png' alt='leuchtturm illustration' layout='responsive'/>
-      
-                                                In Hommage an eine typische Kiez-Kneipe auf St.Pauli, haben wir im Herzen von
-                                                Freiburg ein Lokal eröffnet, welches es so südlich der Elbe wohl kein zweites
-                                                Mal gibt. Ausgebaut im Stile eines Schiffrumpfes, ist der im Herzen der Altstadt
-                                                gelegene Rettungsanker-Freiburg idealer Treffpunkt um nach Feiereabend etwas zu entspannen und nette Leute kennenzulernen. Wir sind stolz auf
-                                                unser buntes, internationales Publikum. Unser Rettungsanker ist auch ideale
-                                                Location zur Durchführung Ihres privaten oder geschäftlichen Events <Link className="w-20 h-16 bg-slate-500 hover:bg-sky-900 text-center text-xl cursor-pointer rounded-xl px-2 "><span className='text-xl text-center'><a href="./events">INFO</a></span> </Link>  Sprechen
-                                                Sie uns an oder kontaktieren Sie uns vor Ort oder schreiben Sie uns eine email.
-                                                Wir freuen uns Sie im Rettungsanker begrüsssen zu dürfen <br />
-                                                <br />
-                                                Michael Schreck und das Team des Rettungsankers
-                                              </p> 
-                                              </div>
-                                              <button
-                                            type="button"
-                                            className="mt-6 relative w-6/12 text-2xl flex flex-col items-center justify-center rounded-lg border border-transparent bg-orange-700 hover:bg-yellow-700 px-4 py-2 font-sans lg:text-3xl font-medium text-gray-200 hover:bg-orange-700- focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 md:text-3xl xl:mt-2 lg:mb-20"
-                                          >
-                                            <svg className="w-16 lg:w-20 " fill="#ffffff" viewBox="0 0 20 20"  xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-                                            <a className="ui btn" href="mailto:rettungsanker-freiburg@gmx.de?">
-                                            SOS e-mail</a>
-                                          </button>
-                                             
-                                                              </div>
-                                </div>
-      
-                           
+          <div className=" w -2/3 lg:bg--900/10">
+            <div className="flex flex-col items-center justify-center lg:flex-row">
+              <div className="flex flex-col lg:flex">
+                <h5 className="mb-3 py-6 text-center font-sans text-5xl font-bold tracking-tight text-yellow-500 dark:text-white xl:text-6xl">
+                  "Moin Moin Moin"
+                </h5>
+                <p className="z-5  mb-1 w-full text-justify text-[.75rem] font-normal text-gray-300 dark:text-gray-400 lg:text-[1.3rem] xl:text-[2.33rem] xl:leading-10">
+                  <img
+                    className="shape-lighthouse h-48 w-24 lg:h-3/5 lg:w-6/12"
+                    src="/lighthouse4.png"
+                    alt="leuchtturm illustration"
+                    layout="responsive"
+                  />
+                  In Hommage an eine typische Kiez-Kneipe auf St.Pauli, haben wir im Herzen von
+                  Freiburg ein Lokal eröffnet, welches es so südlich der Elbe wohl kein zweites Mal
+                  gibt. Ausgebaut im Stile eines Schiffrumpfes, ist der im Herzen der Altstadt
+                  gelegene Rettungsanker-Freiburg idealer Treffpunkt um nach Feiereabend etwas zu
+                  entspannen und nette Leute kennenzulernen. Wir sind stolz auf unser buntes,
+                  internationales Publikum. Unser Rettungsanker ist auch ideale Location zur
+                  Durchführung Ihres privaten oder geschäftlichen Events{' '}
+                  <Link className="h-16 w-20 cursor-pointer rounded-xl bg-slate-500 px-2 text-center text-xl hover:bg-sky-900 ">
+                    <span className="text-center text-xl">
+                      <a href="./events">INFO</a>
+                    </span>{' '}
+                  </Link>{' '}
+                  Sprechen Sie uns an oder kontaktieren Sie uns vor Ort oder schreiben Sie uns eine
+                  email. Wir freuen uns Sie im Rettungsanker begrüsssen zu dürfen <br />
+                  <br />
+                  Michael Schreck und das Team des Rettungsankers
+                </p>
+              </div>
+              <button
+                type="button"
+                className="hover:bg-orange-700- relative mt-6 flex w-6/12 flex-col items-center justify-center rounded-lg border border-transparent bg-orange-700 px-4 py-2 font-sans text-2xl font-medium text-gray-200 hover:bg-yellow-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 md:text-3xl lg:mb-20 lg:text-3xl xl:mt-2"
+              >
+                <svg
+                  className="w-16 lg:w-20 "
+                  fill="#ffffff"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                </svg>
+                <a className="ui btn" href="mailto:rettungsanker-freiburg@gmx.de?">
+                  SOS e-mail
+                </a>
+              </button>
             </div>
-            
-      {/*======================================================================= ENDE FLEXBOX ===========================================================*/}
+          </div>
+        </div>
+
+        {/*======================================================================= ENDE FLEXBOX ===========================================================*/}
       </section>
       <section className=" bg-slate-900">
-            <div className="hidden lg:grid overflow-hidden md:grid md:grid-cols-3 grid-rows-2 gap-3">
-              <div className="relative z-40 mx-auto w-10/12 md:w-11/12">
-                <Image
-                  className='relative z-40'
-                  width="619"
-                  height="696"
-                  src="/bulleye.png"
-                  layout="responsive"
-                  alt="Bullauge"
-                />
-              </div>
-              <div className="mx-auto w-10/12 md:w-11/12">
-                <Image
-                  width="619"
-                  height="696"
-                  src="/bulleye.png"
-                  layout="responsive"
-                  alt="Bullauge"
-                />
-              </div>
-              <div className="mx-auto w-10/12 md:w-11/12">
-                <Image
-                  width="619"
-                  height="696"
-                  src="/bulleye.png"
-                  layout="responsive"
-                  alt="Bullauge"
-                />
+        <div className="hidden grid-rows-2 gap-3 overflow-hidden md:grid md:grid-cols-3 lg:grid">
+          <div className="relative z-40 mx-auto w-10/12 md:w-11/12">
+            <Image
+              className="relative z-40"
+              width="619"
+              height="696"
+              src="/bulleye.png"
+              layout="responsive"
+              alt="Bullauge"
+            />
+          </div>
+          <div className="mx-auto w-10/12 md:w-11/12">
+            <Image width="619" height="696" src="/bulleye.png" layout="responsive" alt="Bullauge" />
+          </div>
+          <div className="mx-auto w-10/12 md:w-11/12">
+            <Image width="619" height="696" src="/bulleye.png" layout="responsive" alt="Bullauge" />
+          </div>
+        </div>
+      </section>
+      {/*======================================= SECTION KNEIPE =======================================================================*/}
+      
+      
+      <section className="mx-auto w-full bg-slate-900 py-12">
+        <h1 className="headingF text-center text-7xl text-yellow-600 lg:-mt-[58vh] lg:text-[12rem]">
+          Die Kneipe
+        </h1>
+
+        <div
+          className="relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center"
+          style={{ backgroundImage: "url('/Hero.png')", height: '66vh' }}
+        >
+          <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed">
+            <div className="flex h-full items-center justify-center">
+              <div className="text-white">
+                <h2 className="mb-4 text-4xl font-semibold">Heading</h2>
+                <h4 className="mb-6 text-xl font-semibold">Subheading</h4>
               </div>
             </div>
-          </section> 
-         
+          </div>
+        </div>
 
-
-        
-{/*======================================= SECTION BULLAUGE =======================================================================*/}
-
-         
-         
-              
-        
-         
-          {/*========================================================== section C ===============================================================*/}
-
-             {/*========================================================== section C ===============================================================*/}
-
-<section className='py-12 w-full mx-auto bg-slate-900'>
-
-<h1 className='text-7xl headingF text-center text-yellow-600 lg:-mt-[58vh] lg:text-[12rem]'>Die Kneipe</h1>
-<div className="mx-auto w-full border-8 border-slate-100">
-  <Image src="/Hero.png" alt="illustration" height="600" width="1400" layout="responsive"/>
-</div>
-<div  className=" flex flex-col items-center lg:flex-row lg:justify-center ">
-
-                                <div className=' p-4 bg-white/5  rounded-3xl lg:w-9/12  '>
-                                            <p className='mx-auto w-full px-6 py-4  text-[.95rem] leading-4 lg:leading-8 text-justify rounded-2xl text-slate-300 lg:w-full lg:text-[1.33rem] '>
-
-                                                      <img className="shape" src='/astraurtyp2.png' width='300' height='250' alt='astra-illu' layout='responsive'/>
-
-                                                Gemütlich nordisches Ambiente im Herzen der Altstadt Freiburgs gelegen. Orginales Kiez und Waterkant-Feeling mit Astra , Flensburger & Co.
-                                                Frisches würziges Ganter Pils vom Fass. Qualitativ hochwertige Weine aus der Region (Weingut Heinemann - Scherzingen). Grosse Auswahl an Longdrinks und Cocktails. Besonders beliebt Captains Blaubär und Störtebeckers Love. Eine genaue Auflistung unseres Angebotes ist unter der Rubrik Drinks hinterlegt 
-                                                  <br/> <br/>
-                                          </p>
-
-                                </div> 
-
-                                <div className=' p-4 bg-white/5 rounded-3xl w-9/12  '>
-                                <p className='mx-auto w-full px-6 py-4  text-[.95rem] leading-4 lg:leading-8 text-justify rounded-2xl text-slate-300 lg:w-full lg:text-[1.33rem] '>
-
-                                            <img className="shape-fussball" src='/fussball.png' width='120' height='120' alt='fussball-illu' layout='responsive'/>
-
-                                                      Jeden Samstag-Spieltag der laufenden Bundesliga-Saison Live TV Event in unserer Sportarena natürlich mit Schwerpunkt unseres SC Freiburgs. Wann immer möglich auch Spiele der Champions League und natürlich der grossen Turniere von EM und WM.
-                                                                Bei Top Spielen des SC Freiburg mit grosser Publikumsnachfrage sind Reservierungen über unser Booking-Tool zu empfehlen - Unten folgender Button und Du bist direkt dabei !! 
-                                                  
-                                          </p>
-                                           <Modale03/>
-                                          
-                  
-                                        
-                                 </div> 
-                               
-
-
-                                <div className=' p-4 bg-white/5 rounded-3xl w-9/12 mb-8'>
-                                <p className='mx-auto w-full px-6 py-4  text-[.95rem] leading-4 lg:leading-8 text-justify rounded-2xl text-slate-300 lg:w-full lg:text-[1.33rem] '>
-
-                                                      <img className="shape-albers" src='/Albers-white.png' width='300' height='250' alt='albers-illu' layout='responsive'/>
-
-                                            Hans Phillip August Albers (* 22.September 1891 in Hamburg , 24. Juli 1960 in Berg, Bayern) war ein deutscher Schauspieler und Sänger, der als "blonder Hans" zum Volksidol wurde. Zu den bekanntesten Spielfilmen in denen er mitwirkte gehören "der Mann, der Sherlock Holmes war" (1937), "Münchhausen" (1943), "die grosse Freiheit Nr.7" (1943) sowie "Auf fer Reeperbahn Nachts um halb eins" "
-                                                  <br/> <br/>
-                                          </p>
-
-                                </div> 
-
-                                <div className='itemD  p-4 bg-white/5 rounded-3xl w-9/12 mb-8'>
-                                <p className='mx-auto w-full px-6 py-4  text-[.95rem] leading-4 lg:leading-8 text-justify rounded-2xl text-slate-300 lg:w-full lg:text-[1.33rem] '>
-
-                                            <img className="shape-astraballon" src='/Astraballons.png' width='120' height='120' alt='astra-illu' layout='responsive'/>
-
-                                            Jeden Samstag-Spieltag der laufenden Bundesliga-Saison Live TV Event in unserer Sportarena natürlich mit Schwerpunkt unseres SC Freiburgs. Wann immer möglich auch Spiele der Champions League und natürlich der grossen Turniere von EM und WM.
-                                                                Bei Top Spielen des SC Freiburg mit grosser Publikumsnachfrage sind Reservierungen über unser Booking-Tool zu empfehlen - Unten folgender Button und Du bist direkt dabei !! 
-                                                  <br/> <br/>
-                                          </p>
-
-                                </div> 
-
-
-
- </div>
   
-  
-  
-  
-  
-</section>            {/*========================================================== section F ==============================================================*/}
-<section className="bg-slate-900">          
-<ThemeProvider theme={theme}>
-              <div className="-mt-1 mx-auto p-16 lg:w-11/12 lg:max-w-8xl xl:mt-[vh] grid grid-cols-1 justify-center items-center md:p-6  md:grid-cols-3 md:justify-around lg:item11s-center lg:gap-x-5">
-                <Card
-                  className="justify-self-center"
-                  mb={3}
-                  mt={20}
-                  sx={{
-                    maxWidth: 700,
-                    padding: "12px",
-                    color: "#ffffff",
-                    backgroundColor: "orange",
-                    border: "3px white solid",
-                    boxShadow: "10px 5px 10px rgba(244, 216, 154, 0.9)",
-                  }}
-                  onGotPointerCapture={2}
-                >
-                  <div className="mx-auto border- border-gray-100">
-                    <Astra
-                      object-fit="cover"
-                      height="25vh"
-                      width="100%"
-                    ></Astra>
-                  </div>
-                  <Text>
-                    <p className="mt-10 text-2xl text-center text uppercase font-bold">
-                      Astra Bier
-                    </p>
-                    <p className="text-xl text-center">
-                      natürlich direkt vom Kiez in den Anker
-                    </p>
-                  </Text>
-                </Card>
+        <div className=" flex flex-col items-center lg:flex-row lg:justify-center ">
+          <div className=" rounded-3xl bg-white/5  p-4 lg:w-9/12  ">
+            <p className="mx-auto w-full rounded-2xl px-6  py-4 text-justify text-[.95rem] leading-4 text-slate-300 lg:w-full lg:text-[1.33rem] lg:leading-8 ">
+              <img
+                className="shape"
+                src="/astraurtyp2.png"
+                width="300"
+                height="250"
+                alt="astra-illu"
+                layout="responsive"
+              />
+              Gemütlich nordisches Ambiente im Herzen der Altstadt Freiburgs gelegen. Orginales Kiez
+              und Waterkant-Feeling mit Astra , Flensburger & Co. Frisches würziges Ganter Pils vom
+              Fass. Qualitativ hochwertige Weine aus der Region (Weingut Heinemann - Scherzingen).
+              Grosse Auswahl an Longdrinks und Cocktails. Besonders beliebt Captains Blaubär und
+              Störtebeckers Love. Eine genaue Auflistung unseres Angebotes ist unter der Rubrik
+              Drinks hinterlegt
+              <br /> <br />
+            </p>
+          </div>
 
-                <Card
-                  className="justify-self-center"
-                  mb={3}
-                  mt={20}
-                  sx={{
-                    maxWidth: 700,
-                    padding: "12px",
-                    color: "#ffffff",
-                    backgroundColor: "orange",
-                    border: "3px white solid",
-                    boxShadow: "10px 5px 10px rgba(244, 216, 154, 0.9)",
-                  }}
-                  onGotPointerCapture={2}
-                >
-                  <div className="mx-auto border- border-gray-100">
-                    <Ganter
-                      aobject-fit="cover"
-                      height="25vh"
-                      width="100%"
-                    ></Ganter>
-                  </div>
-                  <Text>
-                    <p className="mt-10 text-2xl text-center text uppercase font-bold">
-                      Ganter Bier
-                    </p>                                                                                                                                                                                                                                                                                                                                         
-                    <p className="text-xl text-center">
-                     köstliches Ganter-Bräu vom Fass
-                    </p>
-                  </Text>
-                </Card>
-                <Card
-                  className="justify-self-center"
-                  mb={3}
-                  mt={20}
-                  sx={{
-                    maxWidth: 700,
-                    padding: "12px",
-                    color: "#ffffff",
-                    backgroundColor: "orange",
-                    border: "3px white solid",
-                    boxShadow: "10px 5px 10px rgba(244, 216, 154, 0.9)",
-                  }}
-                  onGotPointerCapture={2}
-                >
-                  <div className="mx-auto border- border-gray-100">
-                    <Flensburger
-                      object-fit="cover"
-                      height="25vh"
-                      width="100%"
-                    ></Flensburger>
-                  </div>
-                  <Text>
-                    <p className="mt-10 text-2xl text-center text uppercase font-bold">
-                      Flensburger
-                    </p>
-                    <p className="text-xl text-center">
-                      das blonde Herbe aus dem hohen Norden
-                    </p>
+          <div className=" w-9/12 rounded-3xl bg-white/5 p-4  ">
+            <p className="mx-auto w-full rounded-2xl px-6  py-4 text-justify text-[.95rem] leading-4 text-slate-300 lg:w-full lg:text-[1.33rem] lg:leading-8 ">
+              <img
+                className="shape-fussball"
+                src="/fussball.png"
+                width="120"
+                height="120"
+                alt="fussball-illu"
+                layout="responsive"
+              />
+              Jeden Samstag-Spieltag der laufenden Bundesliga-Saison Live TV Event in unserer
+              Sportarena natürlich mit Schwerpunkt unseres SC Freiburgs. Wann immer möglich auch
+              Spiele der Champions League und natürlich der grossen Turniere von EM und WM. Bei Top
+              Spielen des SC Freiburg mit grosser Publikumsnachfrage sind Reservierungen über unser
+              Booking-Tool zu empfehlen - Unten folgender Button und Du bist direkt dabei !!
+            </p>
+            <Modale03 />
+          </div>
 
-                  </Text>
-                </Card>
+          <div className=" mb-8 w-9/12 rounded-3xl bg-white/5 p-4">
+            <p className="mx-auto w-full rounded-2xl px-6  py-4 text-justify text-[.95rem] leading-4 text-slate-300 lg:w-full lg:text-[1.33rem] lg:leading-8 ">
+              <img
+                className="shape-albers"
+                src="/Albers-white.png"
+                width="300"
+                height="250"
+                alt="albers-illu"
+                layout="responsive"
+              />
+              Hans Phillip August Albers (* 22.September 1891 in Hamburg , 24. Juli 1960 in Berg,
+              Bayern) war ein deutscher Schauspieler und Sänger, der als "blonder Hans" zum
+              Volksidol wurde. Zu den bekanntesten Spielfilmen in denen er mitwirkte gehören "der
+              Mann, der Sherlock Holmes war" (1937), "Münchhausen" (1943), "die grosse Freiheit
+              Nr.7" (1943) sowie "Auf fer Reeperbahn Nachts um halb eins" "
+              <br /> <br />
+            </p>
+          </div>
+
+          <div className=" mb-8 w-9/12 rounded-3xl bg-white/5 p-4">
+            <p className="mx-auto w-full rounded-2xl px-6  py-4 text-justify text-[.95rem] leading-4 text-slate-300 lg:w-full lg:text-[1.33rem] lg:leading-8 ">
+              <img
+                className="shape-astraballon"
+                src="/Astraballons.png"
+                width="120"
+                height="120"
+                alt="astra-illu"
+                layout="responsive"
+              />
+              Jeden Samstag-Spieltag der laufenden Bundesliga-Saison Live TV Event in unserer
+              Sportarena natürlich mit Schwerpunkt unseres SC Freiburgs. Wann immer möglich auch
+              Spiele der Champions League und natürlich der grossen Turniere von EM und WM. Bei Top
+              Spielen des SC Freiburg mit grosser Publikumsnachfrage sind Reservierungen über unser
+              Booking-Tool zu empfehlen - Unten folgender Button und Du bist direkt dabei !!
+              <br /> <br />
+            </p>
+          </div>
+        </div>
+      </section>{' '}
+      {/*========================================================== ENDE SECTION ===============================================================*/}
+      {/*========================================================== SECTION BIERE ==============================================================*/}
+      <section className="bg-slate-900">
+        <ThemeProvider theme={theme}>
+          <div className="lg:max-w-8xl lg:item11s-center mx-auto -mt-1 grid grid-cols-1 items-center justify-center p-16 md:grid-cols-3 md:justify-around  md:p-6 lg:w-11/12 lg:gap-x-5 xl:mt-[vh]">
+            <Card
+              className="justify-self-center"
+              mb={3}
+              mt={20}
+              sx={{
+                maxWidth: 700,
+                padding: '12px',
+                color: '#ffffff',
+                backgroundColor: 'orange',
+                border: '3px white solid',
+                boxShadow: '10px 5px 10px rgba(244, 216, 154, 0.9)',
+              }}
+              onGotPointerCapture={2}
+            >
+              <div className="border- mx-auto border-gray-100">
+                <Astra object-fit="cover" height="25vh" width="100%"></Astra>
               </div>
-            </ThemeProvider>
-          </section>
-          {/*========================================================== section E =ende ==============================================================*/}            
+              <Text>
+                <p className="text mt-10 text-center text-2xl font-bold uppercase">Astra Bier</p>
+                <p className="text-center text-xl">natürlich direkt vom Kiez in den Anker</p>
+              </Text>
+            </Card>
 
-                  
-                  
+            <Card
+              className="justify-self-center"
+              mb={3}
+              mt={20}
+              sx={{
+                maxWidth: 700,
+                padding: '12px',
+                color: '#ffffff',
+                backgroundColor: 'orange',
+                border: '3px white solid',
+                boxShadow: '10px 5px 10px rgba(244, 216, 154, 0.9)',
+              }}
+              onGotPointerCapture={2}
+            >
+              <div className="border- mx-auto border-gray-100">
+                <Ganter aobject-fit="cover" height="25vh" width="100%"></Ganter>
+              </div>
+              <Text>
+                <p className="text mt-10 text-center text-2xl font-bold uppercase">Ganter Bier</p>
+                <p className="text-center text-xl">köstliches Ganter-Bräu vom Fass</p>
+              </Text>
+            </Card>
+            <Card
+              className="justify-self-center"
+              mb={3}
+              mt={20}
+              sx={{
+                maxWidth: 700,
+                padding: '12px',
+                color: '#ffffff',
+                backgroundColor: 'orange',
+                border: '3px white solid',
+                boxShadow: '10px 5px 10px rgba(244, 216, 154, 0.9)',
+              }}
+              onGotPointerCapture={2}
+            >
+              <div className="border- mx-auto border-gray-100">
+                <Flensburger object-fit="cover" height="25vh" width="100%"></Flensburger>
+              </div>
+              <Text>
+                <p className="text mt-10 text-center text-2xl font-bold uppercase">Flensburger</p>
+                <p className="text-center text-xl">das blonde Herbe aus dem hohen Norden</p>
+              </Text>
+            </Card>
+          </div>
+        </ThemeProvider>
+      </section>
+      {/*========================================================== SEKTION BIERE ENDE ==============================================================*/}
+      {/*========================================================== SEKTION CAROUSSEL ===============================================================*/}
+      <section className=" mx-auto w-full bg-slate-900 py-16 md:mx-auto md:w-full lg:py-20">
+        <div className="h-36 w-5/12 lg:-mt-48 lg:w-3/12 lg:p-8 ">
+          <Image
+            src="/Albers-white.png"
+            alt="Impressionen"
+            height="208 "
+            width="195"
+            layout="responsive"
+          />
+        </div>
+        <h1 className="headingB lg:headingA mb-6 text-center text-5xl text-gray-50 lg:mt-48 lg:text-[4.66rem] lg:text-yellow-500">
+          Impressionen Rettungsanker
+        </h1>
 
+        <div className="mx-auto   border-4  border-slate-100 lg:mt-[5vh] lg:w-6/12 lg:h-auto">
+          <NukaCarousel/> 
+        </div>
+        <p className="mt-1 text-center text-xs text-white lg:text-lg">
+          Impressionen aus dem Rettungsanker
+        </p>
+      </section>
+      {/*========================================================== SECTION CAROUSSEL ENDE==============================================================*/}
+      <hr className="mx-auto mt-[40vh] w-full md:w-11/12 lg:mt-0 " />
+{/*========================================================== SECTION IMPRESSUM          =================================================*/}
+      <section className="items-between -mt-[54vh] flex flex-col justify-end bg-slate-900 lg:mt-1 xl:py-36">
+        <div className="mx-auto mt-6 md:mt-20 md:w-2/12 lg:mx-auto lg:mt-6">
+          <LogoNeu className="h-48 w-48 lg:h-60 lg:w-60"></LogoNeu>
+        </div>
+        <div>
+          <h1 className="headingB lg:headingA text-center text-[3rem] text-white lg:text-[6rem] lg:text-gray-600">
+            Impressum
+          </h1>
+          <div>
+            <div className="mt-8 flex flex-col items-center justify-between">
+              <h1 className="mx-auto w-9/12 text-center text-gray-100 md:text-4xl">
+                gemäß § 6 Teledienstegesetz (TDG){' '}
+              </h1>
+              <h1 className="mx-auto w-9/12 text-center text-gray-100 md:text-3xl">
+                Inhaltlich Verantwortlicher gemäß § 6 MDStV: Michael Schreck
+              </h1>
+              <h1 className="mx-auto w-9/12 text-center text-gray-100 md:text-3xl">
+                Adelhauserstrasse 7c
+              </h1>
+              <h1 className="mx-auto w-9/12 text-center text-gray-100 md:text-3xl">
+                D 79098 Freiburg / Breisgau
+              </h1>
+            </div>
 
+            <div className="mt-12">
+              <h1 className="mx-auto mt-5 w-9/12 text-center font-mono text-yellow-400 md:text-2xl">
+                Geschäftsführung:
+              </h1>
+              <h1 className="mx-auto w-9/12 text-center text-gray-100 md:text-3xl">
+                Michael Schreck
+              </h1>
+            </div>
 
-
-
-
-
-          <section className=" bg-slate-900 py-16 w-full mx-auto md:w-full md:mx-auto lg:py-20">
-          <div className="h-36 w-5/12 lg:w-3/12 lg:p-8 lg:-mt-48 ">
-           <Image                                                                                                                                                                
-             src="/Albers-white.png"
-             alt="Impressionen"
-             height="208 "
-             width="195"
-             layout="responsive"
-           />
-         </div>
-          <h1 className="mb-6 headingB text-5xl text-center text-gray-50 lg:headingA lg:text-yellow-500 lg:text-[4.66rem] lg:mt-48">
-           Impressionen Rettungsanker
-         </h1>
-      
-                      
-                      
-                      
-                      
-                     <div className="mx-auto   border-4  border-slate-100 lg:w-9/12 lg:mt-[5vh]">
-                         
-                           <Karussel/>
-                             
-                                                                                                                                                                                                                                      
-
-
-                        
-              
-                       </div>
-                       <p className="mt-1 text-xs text-white text-center lg:text-lg">Impressionen aus dem Rettungsanker</p>
-
-                     </section>
-                
-                       
-                       
-         
-         {/*========================================================== section F ende==============================================================*/}
-         
-
-           <hr className="w-full mt-[40vh] mx-auto md:w-11/12 lg:mt-0 "/>
-{/*========================================================== section G =================================================*/}
-         <section className="-mt-[54vh] flex flex-col justify-end items-between lg:mt-1 xl:py-36 bg-slate-900">
-         <div className="mt-6 md:mt-20 mx-auto md:w-2/12 lg:mx-auto lg:mt-6">
-               <LogoNeu className="w-48 h-48 lg:w-60 lg:h-60"></LogoNeu>
-                 
-             </div>
-           <div>                                                            
-           
-             
-
-             <h1 className="headingB text-white text-[3rem] text-center lg:headingA lg:text-[6rem] lg:text-gray-600">                                                                           
-               Impressum
-             </h1>
-             <div>
-               <div className="mt-8 flex flex-col items-center justify-between">
-                 <h1 className="mx-auto w-9/12 md:text-4xl text-gray-100 text-center">
-                 gemäß § 6 Teledienstegesetz (TDG) </h1>
-                 <h1 className='mx-auto w-9/12 md:text-3xl text-gray-100 text-center'>Inhaltlich Verantwortlicher gemäß § 6 MDStV: Michael Schreck</h1>
-                 <h1 className="mx-auto w-9/12 md:text-3xl text-gray-100 text-center">
-                   Adelhauserstrasse 7c
-                 </h1>
-                 <h1 className="mx-auto w-9/12 md:text-3xl text-gray-100 text-center">
-                   D 79098 Freiburg / Breisgau
-                 </h1>
-               </div>
-
-               <div className="mt-12">
-                 <h1 className="mt-5 mx-auto w-9/12 font-mono md:text-2xl text-yellow-400 text-center">
-                   Geschäftsführung:
-                 </h1>
-                 <h1 className="mx-auto w-9/12 md:text-3xl text-gray-100 text-center">
-                   Michael Schreck
-                 </h1>
-               </div>
-
-               <div className="mt-12">
-                 <h1 className="mt-5 mx-auto w-9/12 font-mono md:text-2xl text-yellow-400 text-center">
-                   Steuernummer:
-                 </h1>
-                 <h1 className="mx-auto w-9/12 md:text-3xl text-gray-100 text-center">
-                   1234567890
-                 </h1>
-               </div>
-               <div className="mt-12">
-                 <h1 className="mt-5 mx-auto w-9/12 font-mono md:text-2xl text-yellow-400 text-center">
-                   Gerichtsstand:
-                 </h1>
-                 <h1 className="mb-10 mx-auto w-9/12 md:text-3xl text-gray-100 text-center  lg:mb-9">
-                   Freiburg/ Breisgau
-                 </h1>
-               </div>
-             </div>
-           </div>
-         </section>
-
-         {/*======================================= Ende Section B =======================================================================*/}          
-
-
-      
+            <div className="mt-12">
+              <h1 className="mx-auto mt-5 w-9/12 text-center font-mono text-yellow-400 md:text-2xl">
+                Steuernummer:
+              </h1>
+              <h1 className="mx-auto w-9/12 text-center text-gray-100 md:text-3xl">1234567890</h1>
+            </div>
+            <div className="mt-12">
+              <h1 className="mx-auto mt-5 w-9/12 text-center font-mono text-yellow-400 md:text-2xl">
+                Gerichtsstand:
+              </h1>
+              <h1 className="mx-auto mb-10 w-9/12 text-center text-gray-100 md:text-3xl  lg:mb-9">
+                Freiburg/ Breisgau
+              </h1>
+            </div>
+              </div>
+        </div>
+      </section>
+  {/*======================================= SECTION IMPRESSUM ENDE =======================================================================*/}
     </>
   )
 }

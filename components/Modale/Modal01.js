@@ -37,7 +37,7 @@ export default function Modal01() {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-           <Dialog.Overlay className="fixed inset-0  bg-yellow-700/75" />
+            <Dialog.Overlay className="fixed inset-0  bg-yellow-700/75" />
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">
@@ -51,20 +51,23 @@ export default function Modal01() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden border border-gray-100-500 rounded-2xl bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
-                  <Dialog.Title
-                    as="h3"
-                    className="text-3xl font-medium leading-6 text-amber-500"
-                  >
+                <Dialog.Panel className="border-gray-100-500 w-full max-w-md transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Title as="h3" className="text-3xl font-medium leading-6 text-amber-500">
                     Karte Altstadt
                   </Dialog.Title>
                   <div className="mt-2">
-                  <div className=" mt-12 mx-auto  mb-12 w-80 lg:w-96 max-w-sm items-center border border-gray-50 bg-slate-900 px-5 py-4 text-center shadow-2xl shadow-gray-400 lg:max-w-xl">
-            <Image src="/MapFreiburg.png" alt="Illustration Altstadt" height="900" width="955" layout="responsive" />
-            <h1 className="mt-2 mb-2 text-center text-xs text-gray-100">
-              Illustration Altstadt Freiburg{' '}
-            </h1>
-          </div>
+                    <div className=" mx-auto mt-12  mb-12 w-80 max-w-sm items-center border border-gray-50 bg-slate-900 px-5 py-4 text-center shadow-2xl shadow-gray-400 lg:w-96 lg:max-w-xl">
+                      <Image
+                        src="/MapFreiburg.png"
+                        alt="Illustration Altstadt"
+                        height="900"
+                        width="955"
+                        layout="responsive"
+                      />
+                      <h1 className="mt-2 mb-2 text-center text-xs text-gray-100">
+                        Illustration Altstadt Freiburg{' '}
+                      </h1>
+                    </div>
                   </div>
 
                   <div className="mt-4">

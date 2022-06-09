@@ -5,8 +5,8 @@ import TabelleBL from '../components/TabelleBL'
 import axios from 'axios'
 import React, { useMemo } from 'react'
 import { container } from 'tailwindcss/defaultTheme'
-import HeroSportarenaAni from "/components/Animationen/HeroSportarenaAnimated"
-import Modale03 from "../components/Modale/Modal03"
+import HeroSportarenaAni from '/components/Animationen/HeroSportarenaAnimated'
+import Modale03 from '../components/Modale/Modal03'
 
 export default class FetchDataUser extends React.Component {
   state = {
@@ -38,41 +38,33 @@ export default class FetchDataUser extends React.Component {
 
     return (
       <>
-        <container className=" flex flex-col justify-between w-full mx-auto">
+        <container className=" mx-auto flex w-full flex-col justify-between">
           <div
             style={{ 'background-image': "url('/sportarena.jpg')" }}
-            className="mb-5 flex-1 w-full h-[120vh] bg-cover border border-yellow-400  bg-no-repeat"
+            className="mb-5 h-[120vh] w-full flex-1 border border-yellow-400 bg-cover  bg-no-repeat"
           >
-                       <HeroSportarenaAni/>
-         
+            <HeroSportarenaAni />
             {/*<DataSCFreiburg></DataSCFreiburg>*/}
             <div className="flex flex-col items-center justify-start">
-              <p className="mb-5 headingc text-4xl text-center text-white">
-                Tisch reservieren?
-              </p>
+              <p className="headingc mb-5 text-center text-4xl text-white">Tisch reservieren?</p>
               <Modale03></Modale03>
             </div>
-            <p className="mt-5 mx-auto text-1xl text-gray-200 text-center font-sans xl:text-2xl">
+            <p className="text-1xl mx-auto mt-5 text-center font-sans text-gray-200 xl:text-2xl">
               Saison vom{' '}
-              <span className="text-yellow-500 font-bold">
-                {this.state.tabelle.startDate}
-              </span>{' '}
-              bis{' '}
-              <span className="text-yellow-500 font-bold">
-                {this.state.tabelle.endDate}
-              </span>
+              <span className="font-bold text-yellow-500">{this.state.tabelle.startDate}</span> bis{' '}
+              <span className="font-bold text-yellow-500">{this.state.tabelle.endDate}</span>
             </p>
-            <p className="mx-auto text-4xl text-gray-200 text-center font-sans xxl:text-4xl">
+            <p className="xxl:text-4xl mx-auto text-center font-sans text-4xl text-gray-200">
               Die Bundesliga
             </p>
-            <p className="mx-auto text-2xl text-gray-200 text-center font-sans xl:text-2xl">
-              <span className="text-yellow-500 font-bold">
+            <p className="mx-auto text-center font-sans text-2xl text-gray-200 xl:text-2xl">
+              <span className="font-bold text-yellow-500">
                 {this.state.tabelle.currentMatchday}.
               </span>{' '}
               Spieltag
             </p>
             :
-            <div className="container  mt-5 text-xs border border-yellow-500 w-full md:w-11/12 xl:w-10/12 mx-auto mb-24">
+            <div className="container  mx-auto mt-5 mb-24 w-full border border-yellow-500 text-xs md:w-11/12 xl:w-10/12">
               <TabelleBL className="text-xs"></TabelleBL>
             </div>
           </div>

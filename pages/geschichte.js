@@ -2,9 +2,7 @@
 import React from 'react'
 
 const geschichte = () => {
-  return (
-    <div>geschichte</div>
-  )
+  return <div>geschichte</div>
 }
 
 export default geschichte

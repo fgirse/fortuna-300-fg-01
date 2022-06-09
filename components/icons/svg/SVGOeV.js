@@ -69,4 +69,3 @@ const SvgOev = (props) => (
 )
 
 export default SvgOev
-

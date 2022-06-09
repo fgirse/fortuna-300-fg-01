@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable jsx-a11y/anchor-has-content */
 import Link from 'next/link'
 

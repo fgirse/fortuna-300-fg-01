@@ -218,4 +218,3 @@ const SvgStockVectorFreiburg = (props) => (
 )
 
 export default SvgStockVectorFreiburg
-

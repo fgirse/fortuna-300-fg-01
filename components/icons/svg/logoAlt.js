@@ -69,4 +69,3 @@ const SvgLogoAlt = (props) => (
 )
 
 export default SvgLogoAlt
-

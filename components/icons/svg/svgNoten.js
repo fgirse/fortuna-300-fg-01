@@ -68,4 +68,3 @@ const SvgN0Ten = (props) => (
 )
 
 export default SvgN0Ten
-

@@ -241,4 +241,3 @@ const SvgDrinks = (props) => (
 )
 
 export default SvgDrinks
-

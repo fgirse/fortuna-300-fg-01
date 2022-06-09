@@ -21,9 +21,8 @@ export default function Blog({ posts, initialDisplayPosts, pagination }) {
   return (
     <>
       <PageSEO title={`Blog - ${siteMetadata.author}`} description={siteMetadata.description} />
-      
-    
-    <section className='bg-white/30 w-full h-screen'>
-    </section>
-  </>)
+
+      <section className="h-screen w-full bg-white/30"></section>
+    </>
+  )
 }

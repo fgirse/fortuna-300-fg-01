@@ -21,7 +21,7 @@ export default function Modal02() {
         <button
           type="button"
           onClick={openModal}
-          className="rounded-md bg-green-700 bg-opacity-80 px-4 py-2 text- lg font-medium text-white hover:bg-opacity-60 focus:outline-none focus-visible:ring-2 focus-visible:ring-white fo                           cus-visible:ring-opacity-75"
+          className="text- lg fo cus-visible:ring-opacity-75 rounded-md bg-green-700 bg-opacity-80 px-4 py-2 font-medium text-white hover:bg-opacity-60 focus:outline-none focus-visible:ring-2                           focus-visible:ring-white"
         >
           OPENSTREET MAP
         </button>
@@ -38,7 +38,7 @@ export default function Modal02() {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-             <Dialog.Overlay className="fixed inset-0  bg-yellow-700/75" />
+            <Dialog.Overlay className="fixed inset-0  bg-yellow-700/75" />
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">
@@ -52,16 +52,12 @@ export default function Modal02() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden border border-gray-100-500 rounded-2xl bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
-                  <Dialog.Title
-                    as="h3"
-                    className="text-3xl font-medium leading-6 text-amber-500"
-                  >
+                <Dialog.Panel className="border-gray-100-500 w-full max-w-md transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Title as="h3" className="text-3xl font-medium leading-6 text-amber-500">
                     OPENSTREET MAP
                   </Dialog.Title>
                   <div className="mt-2">
-                           <Map/>
-                            
+                    <Map />
                   </div>
 
                   <div className="mt-4">

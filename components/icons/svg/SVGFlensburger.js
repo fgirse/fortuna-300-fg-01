@@ -69,4 +69,3 @@ const SvgFlensburger = (props) => (
 )
 
 export default SvgFlensburger
-

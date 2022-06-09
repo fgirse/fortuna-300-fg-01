@@ -1,6 +1,5 @@
 /* eslint-disable prettier/prettier */
-import Document, { Html, Head, Main, NextScript } from 'next/document';
-
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 class MyDocument extends Document {
   render() {
@@ -14,6 +13,8 @@ class MyDocument extends Document {
             sizes="32x32"
             href="/static/favicons/favicon-32x32.png"
           />
+
+  
           <link
             rel="icon"
             type="image/png"
@@ -25,13 +26,12 @@ class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#000000" />
           <meta name="theme-color" content="#000000" />
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-          
-         
         </Head>
         <body className="bg-slate-700 text-black antialiased dark:bg-gray-900 dark:text-white">
           <Main />
           <NextScript />
-        </body>
+          
+          </body>
       </Html>
     )
   }

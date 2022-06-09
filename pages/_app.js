@@ -1,11 +1,11 @@
 /* eslint-disable prettier/prettier */
 import '@/css/tailwind.css'
 import '@/css/prism.css'
-import "../css/swiper.css"
+import '../css/swiper.css'
 import 'katex/dist/katex.css'
 
 import '@fontsource/inter/variable-full.css'
-import { useEffect } from "react";
+import { useEffect } from 'react'
 import { ThemeProvider } from 'next-themes'
 import Head from 'next/head'
 
@@ -18,11 +18,9 @@ const isDevelopment = process.env.NODE_ENV === 'development'
 const isSocket = process.env.SOCKET
 
 export default function App({ Component, pageProps }) {
-
   useEffect(() => {
-    import("tw-elements");
-    
-  }, []);
+    import('tw-elements')
+  }, [])
 
   return (
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
@@ -37,4 +35,3 @@ export default function App({ Component, pageProps }) {
     </ThemeProvider>
   )
 }
-

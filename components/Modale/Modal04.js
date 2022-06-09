@@ -22,7 +22,7 @@ export default function Modal04() {
         <button
           type="button"
           onClick={openModal}
-          className="rounded-md bg-orange-500 bg-opacity-80 px-4 py-2 text-2xl font-medium text-white hover:bg-opacity-60 focus:outline-none focus-visible:ring-2 focus-visible:ring-white fo                           cus-visible:ring-opacity-75"
+          className="fo cus-visible:ring-opacity-75 rounded-md bg-orange-500 bg-opacity-80 px-4 py-2 text-2xl font-medium text-white hover:bg-opacity-60 focus:outline-none focus-visible:ring-2                           focus-visible:ring-white"
         >
           more Information
         </button>
@@ -40,7 +40,6 @@ export default function Modal04() {
             leaveTo="opacity-0"
           >
             <Dialog.Overlay className="fixed inset-0 bg-yellow-700/75" />
-
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">
@@ -54,7 +53,7 @@ export default function Modal04() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden border border-gray-100-500 rounded-2xl bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="border-gray-100-500 w-full max-w-md transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
                     className="text-3xl font-medium leading-10 text-amber-500 lg:text-9xl"
@@ -62,12 +61,30 @@ export default function Modal04() {
                     Info
                   </Dialog.Title>
                   <div className="mt-2">
-                  <div className="mt-2 lg:mt-1 ">
-                <p className=" text-justify p-3 text-gray-100 text-xs lg:text-xl">Der Rettungsanker und seine Räumlichkeiten sind eine ideale Location um Ihre privaten oder geschäftlichen Anlässe wie Geburtstage, Hochzeiten und Verlobungen, aber auch Firmen- oder Belegschaftspartys zu gestalten. Im Rahmen einer "geschlossenen Gesellschaft" steht Ihnen der Rettungsanker mit seinen Räumlichkeiten für Ihre Feierlichkeiten zur Verfügung. Auch können wir Ihnen - falls dies erwünscht - ein vollumfängliches <span className='text-yellow-400 font-bold'>Catering</span> anbieten. Hier sind Ihren Wünschen im Grunde genommen keine Grenzen gesetzt. Unsere Koperationspartner  <LogoLeckerladen className="inline align-middle w-20 h-12"/>  sind für ausgezeichnete und ideenreiche Apero-Buffets oder Menues besoders ausgewiesen und werden nichts unversucht lassen Ihre Wünsche und Ideen umzusetzten. 
-                Nähere Informationen zur Planung Ihres Events besprechen wir am sinnvollsten nach <span className='text-yellow-400 font-bold'>Vereinbarung eines persönlichen Termins</span>. Senden Sie uns eine e-mail oder sprechen Sie uns direkt im Rettungsanker an!!! Wir freuen uns Ihre Feierlichkeiten professionell begleiten zu dürfen.
-                Michael Schreck und das Team Rettungsanker." </p>
-                </div>
-                            
+                    <div className="mt-2 lg:mt-1 ">
+                      <p className=" p-3 text-justify text-xs text-gray-100 lg:text-xl">
+                        Der Rettungsanker und seine Räumlichkeiten sind eine ideale Location um Ihre
+                        privaten oder geschäftlichen Anlässe wie Geburtstage, Hochzeiten und
+                        Verlobungen, aber auch Firmen- oder Belegschaftspartys zu gestalten. Im
+                        Rahmen einer "geschlossenen Gesellschaft" steht Ihnen der Rettungsanker mit
+                        seinen Räumlichkeiten für Ihre Feierlichkeiten zur Verfügung. Auch können
+                        wir Ihnen - falls dies erwünscht - ein vollumfängliches{' '}
+                        <span className="font-bold text-yellow-400">Catering</span> anbieten. Hier
+                        sind Ihren Wünschen im Grunde genommen keine Grenzen gesetzt. Unsere
+                        Koperationspartner{' '}
+                        <LogoLeckerladen className="inline h-12 w-20 align-middle" /> sind für
+                        ausgezeichnete und ideenreiche Apero-Buffets oder Menues besoders
+                        ausgewiesen und werden nichts unversucht lassen Ihre Wünsche und Ideen
+                        umzusetzten. Nähere Informationen zur Planung Ihres Events besprechen wir am
+                        sinnvollsten nach{' '}
+                        <span className="font-bold text-yellow-400">
+                          Vereinbarung eines persönlichen Termins
+                        </span>
+                        . Senden Sie uns eine e-mail oder sprechen Sie uns direkt im Rettungsanker
+                        an!!! Wir freuen uns Ihre Feierlichkeiten professionell begleiten zu dürfen.
+                        Michael Schreck und das Team Rettungsanker."{' '}
+                      </p>
+                    </div>
                   </div>
 
                   <div className="mt-4">

@@ -2,13 +2,7 @@
 import * as React from 'react'
 
 const SvgSaxophoneWeiss = (props) => (
-  <svg
-    width={38}
-    height={31}
-    viewBox="0 0 72.2 58.9"
-    xmlns="http://www.w3.org/2000/svg"
-    {...props}
-  >
+  <svg width={38} height={31} viewBox="0 0 72.2 58.9" xmlns="http://www.w3.org/2000/svg" {...props}>
     <g
       style={{
         fill: '#fff',
