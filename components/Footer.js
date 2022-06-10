@@ -13,8 +13,8 @@ export default function Footer() {
     <footer>
       <div className="flex flex-col items-center justify-center bg-amber-800 ">
         <h1 className="mt-3 text-center text-3xl text-yellow-400">Unsere Partner</h1>
-        <div className="flex w-full flex-row items-center justify-evenly lg:flex-row lg:items-center lg:justify-center lg:gap-10">
-          <Astra className="h-16 w-16 lg:h-36 lg:w-36" />
+        <div className="flex w-full flex-row items-center justify-evenly lg: lg:items-center lg:justify-center lg:gap-x-20">
+          <Astra className="h-16 w-16 lg:h-28 lg:w-28" />
           <LogoLeckerLaden className="h-16 w-24 lg:h-44 lg:w-48" />
           <Flensburger className="h-12 w-12 lg:h-24 lg:w-24" />
         </div>
@@ -28,12 +28,12 @@ export default function Footer() {
           <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size="6" />
           <SocialIcon kind="twitter" href={siteMetadata.twitter} size="6" />
         </div>
-        <div className=" flex space-x-2 text-sm text-gray-100 dark:text-gray-400">
-          <div>{siteMetadata.author}</div>
+        <div className=" flex flex-col justify-start items-center lg:flex-row space-x-2 text-sm text-gray-100 dark:text-gray-400">
+          <div className='text-yellow-500 uppercase'>{siteMetadata.author}</div>
           <div>{` • `}</div>
-          <div>{`© ${new Date().getFullYear()}`}</div>
+          <div className='font-mono'>{`© ${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>
-          <Link href="/">{siteMetadata.title}</Link>
+          <Link className="font-mono" href="/">{siteMetadata.title}</Link>
         </div>
         <div className=" text-sm text-gray-100 dark:text-gray-400">
           <Link href="https://github.com/timlrx/tailwind-nextjs-starter-blog"></Link>

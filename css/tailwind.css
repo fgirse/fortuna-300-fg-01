@@ -39,6 +39,18 @@ input:-webkit-autofill:focus {
       format('svg');
 }
 
+/* bowlby-one-sc - latin */
+@font-face {
+  font-family: 'Bowlby One SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../public/fonts/bowlby_one_sc_regular_400-webfont.woff2') format('woff2'),
+    url('../public/fonts/bowlby_one_sc_regular_400-webfont.woff') format('woff'),
+}
+
+
+
 body {
   background-color: #ffcc00;
 }
@@ -119,46 +131,14 @@ body {
 /* Also you can customize these css styles*/
 
 /* In my case, I use these CSS styles in my App.css file*/
-.swiper {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
 
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-}
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-}
-
-.shape {
-  float: left;
-  shape-outside: url('/astraurtyp2.png');
-  height: 300px;
-  width: 250px;
-  transform: translateX(-2rem);
-}
-
-.shape-fussball {
-  float: right;
-  shape-outside: url('/fussball3.png');
-  height: 166px;
-  width: 166px;
-  object-fit: cover;
-  transform: translateX(2rem);
-}
 
 .shape-lighthouse {
   float: left;
   shape-outside: url('/Lighthouse4.png');
-  height: 150px;
-  width: 200px;
+  height: 140px;
+  width: 150px;
   transform: translateX(-2rem);
 }
 

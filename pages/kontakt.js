@@ -9,7 +9,7 @@ import Modale02 from '../components/Modale/Modal02'
 const kontakt = () => {
   return (
     <>
-      <section className="h-[200vh] overflow-hidden border-t-2 border-amber-400 bg-[#060716] bg-[url('/nightcity.png')] bg-cover bg-center bg-no-repeat">
+      <section className="h-[166vh] overflow-hidden border-t-2 border-amber-400 bg-[#060716] bg-[url('/nightcity.png')] bg-cover bg-center bg-no-repeat">
         <main className="flex w-full flex-col place-items-center justify-center">
           <div className="flex-1  ">
             <div className=" mx-auto grid w-full grid-cols-1 items-stretch justify-center gap-y-10">
@@ -52,7 +52,7 @@ const kontakt = () => {
                 </div>
               </div>
 
-              <div className="mx-auto flex w-full flex-col items-center justify-around border border-white  bg-slate-900 p-4 shadow-xl shadow-gray-500/70 lg:flex lg:flex-row">
+              <div className="mx-auto flex w-11/12 lg:w-full flex-col items-center justify-around border border-white  bg-slate-900 p-4 shadow-xl shadow-gray-500/70 lg:gap-x-2 lg:flex lg:flex-row lg:justify-evenly">
                 <div className="mb-2 h-20 w-60 rounded-2xl bg-gray-300/10 py-4 px-2 lg:w-80 xl:w-80">
                   <Image
                     src="/VAG_Freiburg.png"
@@ -62,9 +62,9 @@ const kontakt = () => {
                     width="400"
                   />
                 </div>
-                <h1 className="text-3xl text-orange-400 md:text-2xl lg:text-3xl ">Haltestelle:</h1>
-                <h1 className="text-5xl text-orange-300 lg:text-3xl">Holzmarkt</h1>
-                <h1 className="text-3xl text-orange-300 lg:text-3xl">Linie 1 3 + 5</h1>
+                <h1 className="text-3xl text-orange-400 md:text-2xl lg:text-3xl ">&nbsp; Haltestelle: &nbsp;</h1>
+                <h1 className="text-5xl text-orange-300 lg:text-2xl">Holzmarkt &nbsp;</h1>
+                <h1 className="text-3xl text-orange-300 lg:text-xl">Linie 1 3 + 5</h1>
               </div>
 
               <p className="mx-auto w-9/12 text-justify text-sm text-gray-200 sm:text-lg md:max-w-md md:text-center lg:text-2xl">

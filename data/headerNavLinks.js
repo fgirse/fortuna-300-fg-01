@@ -3,9 +3,9 @@ const headerNavLinks = [
   { href: '/geschichte', title: 'Geschichte' },
   { href: '/team', title: 'Team' },
   { href: '/drinks', title: 'Drinks' },
-  { href: '/tags', title: 'Tags' },
+  //{ href: '/tags', title: 'Tags' },
   { href: '/sportarena', title: 'Sportarena' },
-  { href: '/about', title: 'About' },
+  //{ href: '/about', title: 'About' },
   { href: '/events', title: 'Events' },
   { href: '/kontakt', title: 'Wohin?' },
 ]

@@ -6,9 +6,9 @@ import HeroTeam from '../components/Animationen/HeroTeamAnimated'
 const team = () => {
   return (
     <>
-      <section className="border-t-8 border-b-8 border-amber-500 bg-sky-700 bg-[url('/Maritim.png')] bg-cover bg-no-repeat py-0">
-        <div className="container mx-auto px-4">
-          <div className="lg:mb- mx-auto mb-12 max-w-3xl text-center">
+      <section className="w-11/12 mx-auto border-t-8 border-b-8 border-amber-500 bg-sky-700 bg-[url('/Maritim.png')] bg-cover bg-no-repeat py-0">
+        <div className=" mx-auto px-4">
+          <div className="lg:mb-0 mx-auto mb-12 max-w-3xl text-center">
             <span>
               <HeroTeam />
             </span>
@@ -22,13 +22,13 @@ const team = () => {
               alt="Portrait"
             />
           </div>
-          <div className="-m-4 flex flex-wrap">
-            <div className="w-full p-4 md:w-1/2 lg:w-1/3">
+          <div className="-mt-1 flex flex-wrap">
+            <div className="-mt-12 w-full p-1 md:w-1/2 lg:w-1/3">
               <div className="flex items-center justify-center  rounded-lg py-12">
                 <div className="w-60 text-center">
                   <Image
                     className="mx-auto rounded-full"
-                    src="/matrose.png"
+                    src="/Matrose.png"
                     layout="responsive"
                     width="200"
                     height="250"
@@ -46,7 +46,7 @@ const team = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full p-4 md:w-1/2 lg:w-1/3">
+            <div className="-mt-20 w-full p-4 md:w-1/2 lg:w-1/3">
               <div className="flex items-center justify-center  rounded-lg py-12">
                 <div className="w-52 text-center">
                   <Image
@@ -70,7 +70,7 @@ const team = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full p-4 md:w-1/2 lg:w-1/3">
+            <div className="-mt-20 w-full p-4 md:w-1/2 lg:w-1/3">
               <div className="flex items-center justify-center  rounded-lg py-12">
                 <div className="w-60 text-center">
                   <Image
@@ -103,12 +103,12 @@ const team = () => {
                     height="250"
                     alt="Portrait"
                   />
-                  <h3 className="font-heading mb-1 text-4xl font-bold">Simon</h3>
-                  <p className="text-3xl text-gray-400">Obermaat</p>
+                  <h3 className="font-heading mb-1 text-4xl font-bold">Kalim</h3>
+                  <p className="text-3xl text-gray-400">Leichtmatrose</p>
                 </div>
               </div>
             </div>
-            <div className="w-full p-4 md:w-1/2 lg:w-1/3">
+            {/*<div className="w-full p-4 md:w-1/2 lg:w-1/3">
               <div className="flex items-center justify-center  rounded-lg py-12">
                 <div className="text-center">
                   <Image
@@ -139,7 +139,7 @@ const team = () => {
                   <p className="text-3xl text-gray-400">Obermaat</p>
                 </div>
               </div>
-            </div>
+  </div>*/}
           </div>
         </div>
       </section>
