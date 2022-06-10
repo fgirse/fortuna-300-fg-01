@@ -44,49 +44,51 @@ const biereB = [
 
 const weineA = [
   {
-    title: 'Aperol Sprtiz',
+    title: 'Spätburgunder trocken',
     price: '6.90 Euro',
-    tags: 'Aperol | Villa Marchesi prosecco | soda | 30 ml',
+    tags: 'Scherzingen | Batzenberg | Weingut Heienmann | 2dl',
   },
   {
-    title: "Dark 'N' Stormy",
-    price: '6.60 Euro',
-    tags: 'Dark rum | Ginger beer | Slice of lime',
+    title: 'Pinot noir trocken',
+    price: '6.90 Euro',
+    tags: 'Scherzingen | Batzenberg | Weingut Heienmann | 2dl',
   },
   {
-    title: 'Daiquiri',
-    price: '$10',
-    tags: 'Rum | Citrus juice | Sugar',
+    title: 'Blauburgunder trocken',
+    price: '6.90 Euro',
+    tags: 'Scherzingen-| Batzenberg | Weingut Heienmann | 2dl',
   },
+  
   {
-    title: 'Old Fashioned',
-    price: '$31',
-    tags: 'Bourbon | Brown sugar | Angostura Bitters',
-  }
+    title: 'Spätburgunder Barrique',
+    price: '6.90 Euro',
+    tags: 'Scherzingen-| Batzenberg | Weingut Heienmann | 2dl',
+  },
+  
 
 
 ];
 
 const weineB = [
   {
-    title: 'Aperol Sprtiz',
+    title: 'Gutedel trocken',
     price: '6.90 Euro',
-    tags: 'Aperol | Villa Marchesi prosecco | soda | 30 ml',
+    tags: 'Scherzingen | Batzenberg | Weingut Heienmann | 2dl',
   },
   {
-    title: "Dark 'N' Stormy",
-    price: '6.60 Euro',
-    tags: 'Dark rum | Ginger beer | Slice of lime',
+    title: 'Müller-Thurgau trocken',
+    price: '6.90 Euro',
+    tags: 'Scherzingen | Batzenberg | Weingut Heienmann | 2dl',
   },
   {
-    title: 'Daiquiri',
-    price: '$10',
-    tags: 'Rum | Citrus juice | Sugar',
+    title: 'Weissburgunder trocken',
+    price: '6.90 Euro',
+    tags: 'Scherzingen | Batzenberg | Weingut Heienmann | 2dl',
   },
   {
-    title: 'Old Fashioned',
-    price: '$31',
-    tags: 'Bourbon | Brown sugar | Angostura Bitters',
+    title: 'Grauburgunder trocken',
+    price: '6.90 Euro',
+    tags: 'Scherzingen | Batzenberg | Weingut Heienmann | 2dl',
   }
 
 
