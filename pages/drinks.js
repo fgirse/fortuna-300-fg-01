@@ -22,16 +22,16 @@ const drinks = () => {
  <h1 className="text-6xl headingB text-white-500 text-center lg:text-[5.33em]">Drinks & Snacks</h1>
  <h1 className="p-3 checked:w-11/12 text-center lg:w-4/12 max-auto text-[.9rem] text-slate-400">Preise gelten wie ausgeschrieben incl. 7% Mwst.</h1>
 
-      <LogoAlt className="hidden lg:block lg:w-full"/>
+      <LogoAlt className="lg:block lg:w-full"/>
  </div>
  <div className="mx-auto w-48 lg:hidden">
         <Image src="/astraglas.png" width="202" height="202"  layout="responsive" alt="menu__img" />
  </div>
-<div className=" mb-3 w-[90vw] flex h-[66vh] justify-center items-center gap-x-3 gap-y-20 mr-auto ml-auto flex-wrap container">
+<div className="container lg:mb-3 lg:flex lg-h-[66vh] lg:justify-center lg:items-center lg:gap-x-3 lg:gap-y-20 lg:mr-auto lg:ml-auto lg:flex-wrap ">
  <div className="bg-black flex w-full h-full justify-center items-center pr-4 pl-4 md:w-[25vw] gap-x-2 md:mb-0">
    
        <div className="flex flex-col items start justify-center">
-        <p className="-mt-text-6xl text-left lg:text-5xl text-slate-100 lg:mt-0">Biere</p>
+        <p className="text-6xl text-left lg:text-5xl text-slate-100 lg:mt-0">Biere</p>
         <p className="mb-3 w-[20vw] border-b"></p>
         <div className="w-full flex flex-col text-right items-end justify-c-[enter text-slate-200">
           {data.biereA.map((biere, index) => (

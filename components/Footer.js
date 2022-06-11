@@ -43,7 +43,7 @@ export default function Footer() {
             className="relative z-50 ml-12 translate-y-6 transform lg:translate-x-60 lg:translate-y-36 lg:transform lg:transform"
             src="/lighthouse3.png"
             height="0%"
-            width="20%"
+            width="13.33%"
             alt="Illustration"
           />
           <Wave className=""></Wave>

@@ -8,6 +8,7 @@ import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import Infosection from './Infosection'
+import Image from 'next/image'
 
 const LayoutWrapper = ({ children }) => {
   return (
@@ -31,21 +32,30 @@ const LayoutWrapper = ({ children }) => {
               </div>
             </Link>*/}
           </div>
-          <div className="flex items-center text-base leading-5">
-            <div className="hidden sm:block">
-              {headerNavLinks.map((link) => (
-                <Link
-                  key={link.title}
-                  href={link.href}
-                  className="p-1  text-[1.33rem]  font-medium text-gray-100 hover:border-b-2 hover:border-yellow-400 hover:text-yellow-400 dark:text-gray-100 sm:p-4"
-                >
-                  {link.title}
-                </Link>
-              ))}
+          
+          <div className="bg-slate-900 flex flex-wrap items-end text-base leading-5">
+              <div className="hidden lg:flex flex-row justify-center items-center">
+                {headerNavLinks.map((link) => (
+                  <Link
+                    key={link.title}
+                    href={link.href}
+                    className="py-5 text-gray-50 font-bold uppercase text-center hover:text-slate-200 dark:text-gray-100 dark:hover:text-sky-700 sm:p-4 lg:text-[.8rem] xl:text-[1.33rem] 2xl:text-[1.333rem]"
+                  >
+                    <div className='w-24 '>
+                      <Image className="hover:transform  hover:-translate hover:scale-110" src="/bulleye.png" height="619" width="699" layout="responsive" alt="Illustration" />
+
+                  </div>
+                    {link.title}
+                  </Link>
+                 
+                ))}
+                 
+              </div>
+              
+              <ThemeSwitch />
+              <MobileNav />
             </div>
-            <ThemeSwitch />
-            <MobileNav />
-          </div>
+   
         </header>
         <main className="mb-auto">{children}</main>
         <Footer />

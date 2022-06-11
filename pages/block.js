@@ -11,6 +11,8 @@ import Ganter from '../components/icons/svg/SVGGanter'
 import Astra from '../components/icons/svg/SVGAstra'
 import sketchy from 'theme-ui-sketchy-preset'
 import { ThemeProvider, Card, Text } from 'theme-ui'
+import { Button } from 'primereact/button';
+import HeroSportarenaAnimated from '@/components/icons/svg/SVGArena'
 
 const theme = {
   ...sketchy,
@@ -145,7 +147,7 @@ export default function block() {
         <ThemeProvider theme={theme}>
           <div className="lg:items-center mx-auto -mt-1 grid grid-cols-1 items-center justify-center p-16 md:grid-cols-3 md:justify-around  md:p-6 lg:max-w-8xlg:w-11/12 lg:gap-x-5 xl:mt-[vh]">
             <Card
-              className="w-80 justify-self-center"
+              className="w-full justify-self-center"
               mb={3}
               mt={20}
               sx={{
@@ -173,7 +175,7 @@ export default function block() {
             </Card>
 
             <Card
-              className="w-80 justify-self-center"
+              className="justify-self-center"
               mb={3}
               mt={20}
               sx={{
@@ -186,8 +188,10 @@ export default function block() {
               }}
               onGotPointerCapture={2}
             >
+
+              
               <div className="border- mx-auto border-gray-100 p-4">
-              <Image src="/fussball.png" object-fit="cover" layout="responsive" height="250" width="250"></Image>
+              <Image src="/fussball4.png" object-fit="cover" layout="responsive" height="250" width="250"></Image>
 
 
               </div>
@@ -201,7 +205,7 @@ export default function block() {
               </Text>
             </Card>
             <Card
-              className="w-80 justify-self-center"
+              className="w-full justify-self-center"
               mb={3}
               mt={20}
               sx={{
@@ -230,6 +234,15 @@ export default function block() {
         </ThemeProvider>
       </section>
       {/*========================================================== SEKTION BIERE ENDE ==============================================================*/}
+   
+       
+        <section>  
+
+    
+       
+
+
+        </section>
         <div className=" flex flex-col items-center lg:flex-row lg:justify-center ">
          
 
@@ -241,7 +254,7 @@ export default function block() {
           
           
         </div>
-      </section>{' '}
+      </section>
       {/*======================================= =================== ENDE SECTION ===============================================================*/}
       {/*========================================================== SECTION BIERE ==============================================================*/}
       <section className="bg-slate-900">
@@ -317,6 +330,8 @@ export default function block() {
           </div>
         </ThemeProvider>
       </section>
+                
+
       {/*========================================================== SEKTION BIERE ENDE ==============================================================*/}
       {/*========================================================== SEKTION CAROUSSEL ===============================================================*/}
       <section className=" mx-auto w-full bg-slate-900 py-2 md:mx-auto md:w-full lg:py-20">
