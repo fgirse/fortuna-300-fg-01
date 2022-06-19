@@ -67,10 +67,10 @@ export default function block() {
                   Durchführung Ihres privaten oder geschäftlichen Events{' '}
                   <Link className="h-16 w-20 cursor-pointer rounded-xl bg-slate-500 px-2 text-center text-xl hover:bg-sky-900 ">
                     <span className="text-center text-xl">
-                      <a href="./events">INFO</a>
+                      <a href="./events">INFO                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </a>
                     </span>{' '}
                   </Link>{' '}
-                   Sprechen Sie uns an oder kontaktieren Sie uns vor Ort oder schreiben Sie uns eine
+                  &nbsp;Sprechen Sie uns an oder kontaktieren Sie uns vor Ort oder schreiben Sie uns eine
                   email. Wir freuen uns Sie im Rettungsanker begrüsssen zu dürfen <br />
                   <br />
                   Michael Schreck und das Team des Rettungsankers
@@ -145,9 +145,9 @@ export default function block() {
    {/*========================================================== SECTION INFO ==============================================================*/}
    <section className="-mt-[48vh] lg:mt-0 bg-slate-900">
         <ThemeProvider theme={theme}>
-          <div className="lg:items-center mx-auto -mt-1 grid grid-cols-1 items-center justify-center p-16 md:grid-cols-3 md:justify-around  md:p-6 lg:max-w-8xlg:w-11/12 lg:gap-x-5 xl:mt-[vh]">
+          <div className="max-w-3xl w-11/12 lg:max-w-8xl lg:items-center mx-auto -mt-1 grid grid-cols-1 items-center justify-center p- md:grid-cols-3 md:justify-around  md:p-6 lg:w-11/12 lg:gap-x-5 xl:mt-[vh]">
             <Card
-              className="w-full justify-self-center"
+              className="justify-self-center"
               mb={3}
               mt={20}
               sx={{
@@ -161,7 +161,7 @@ export default function block() {
               onGotPointerCapture={2}
             >
               <div className="border- mx-auto border-gray-100 p-4">
-                <Image src="/LogoNeu.png" object-fit="cover" layout="responsive" height="260" width="250"></Image>
+                <Image src="/LogoNeu.png" object-fit="cover" layout="responsive" height="260" width="260" alt="Logoneu"></Image>
               </div>
               <Text>
                 <p className="text mt-10 text-center text-2xl font-bold uppercase">Kiezkneipe</p>
@@ -190,8 +190,8 @@ export default function block() {
             >
 
               
-              <div className="border- mx-auto border-gray-100 p-4">
-              <Image src="/fussball4.png" object-fit="cover" layout="responsive" height="250" width="250"></Image>
+              <div className="w-10/12 border- object-contain mx-auto border-gray-100 p-4">
+              <Image src="/Zeichnung-1.svg" layout="responsive" height="610" width="610" alt="fussball"></Image>
 
 
               </div>
@@ -205,7 +205,7 @@ export default function block() {
               </Text>
             </Card>
             <Card
-              className="w-full justify-self-center"
+              className="w-10/12 justify-self-center"
               mb={3}
               mt={20}
               sx={{
@@ -219,7 +219,7 @@ export default function block() {
               onGotPointerCapture={2}
             >
               <div className="border- mx-auto border-gray-100">
-              <Image src="/Albers-white.png" object-fit="cover" layout="responsive" height="250" width="250"></Image>
+              <Image src="/Albers-white.png" object-fit="cover" layout="responsive" height="250" width="250" alt="hans_albers"></Image>
               </div>
               <Text>
                 <p className="text mt-10 text-center text-2xl font-bold uppercase">Blonder Hans</p>
@@ -234,7 +234,7 @@ export default function block() {
         </ThemeProvider>
       </section>
       {/*========================================================== SEKTION BIERE ENDE ==============================================================*/}
-   
+     
        
         <section>  
 
@@ -335,7 +335,7 @@ export default function block() {
       {/*========================================================== SEKTION BIERE ENDE ==============================================================*/}
       {/*========================================================== SEKTION CAROUSSEL ===============================================================*/}
       <section className=" mx-auto w-full bg-slate-900 py-2 md:mx-auto md:w-full lg:py-20">
-        <div className="mb-2 w-5/12 lg:-mt-48 lg:w-3/12 lg:p-8 ">
+        <div className="mb-2 w-5/12 lg:-mt-2 lg:w-3/12 lg:p-8 ">
           <Image
             src="/Albers-white.png"
             alt="Impressionen"
@@ -344,7 +344,7 @@ export default function block() {
             layout="responsive"
           />
         </div>
-        <h1 className="headingB lg:headingA mb-6 text-center text-5xl text-gray-50 lg:mt-48 lg:text-[4.66rem] lg:text-yellow-500">
+        <h1 className="headingB lg:headingA mb-6 text-center text-5xl text-gray-50 lg:-mt-20 lg:text-[4.66rem] lg:text-yellow-500">
           Impressionen Rettungsanker
         </h1>
 

@@ -1,10 +1,15 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable @next/next/inline-script-id */
+/* eslint-disable prettier/prettier */
+/* eslint-disable react/jsx-no-target-blank */
+/* eslint-disable prettier/prettier */
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
 import Image from 'next/image'
-import Sportarena from '../../components/icons/svg/SVGArena'
+import Script from 'next/script'
+import Iframe from 'react-iframe'
 
-export default function Modal03() {
+export default function Modal02() {
   const [isOpen, setIsOpen] = useState(false)
 
   function closeModal() {
@@ -21,9 +26,9 @@ export default function Modal03() {
         <button
           type="button"
           onClick={openModal}
-          className="-600 rounded-md                                                                           bg-amber-500 bg-opacity-80 px-4 py-2 text-lg font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+          className="text-2xl fo cus-visible:ring-opacity-75 rounded-md bg-amber-700 bg-opacity-80 px-4 py-2 font-medium text-white hover:bg-opacity-60 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
         >
-          Tischreservation
+          Tisch Reservation
         </button>
       </div>
 
@@ -38,7 +43,7 @@ export default function Modal03() {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="inset-0 bg-black bg-opacity-25" />
+            <Dialog.Overlay className="fixed inset-0  bg-slate-700/75" />
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">
@@ -52,35 +57,54 @@ export default function Modal03() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="border-gray-100-500 w-full max-w-md transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="border-gray-100-500 w-full max-w-5xl transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title as="h3" className="text-3xl font-medium leading-6 text-amber-500">
-                    TISCH RESERVATION <Sportarena className="inline h-full w-6/12 lg:w-7/12" />
+                    TISCH RESERVATION
                   </Dialog.Title>
-
                   <div className="mt-2">
-                    <p className=" p-3 text-justify text-lg text-gray-100 lg:text-xl ">
-                      Reserviere über unser neues Booking-Tool Deinen Platz in der ersten Reihe in
-                      unserer Sportarena. Du erhälst eine Bestätigungs-email und ein Memo durch sms.
-                    </p>
-                  </div>
+                    <p className='text-slate-50'>Buche eine Tischreservation online! Du erhälst dann eine e-mail zur Bestätigung. Am Tag der Reservation erfolgt ein Remindinding über sms an die von Dir angegebene Telefonnummer. Danke für die Reservation</p> <br/> <p className='text-slate-50'>Team Rettungsanker</p> 
+                  
+                  </div>  
+                  {/*<Script async src='https://app.tablein.com/sites/all/modules/custom/cumo_widget/js/code_outside_iframe.js?v2' type='text/javascript'></Script>*/}
+        
+                  {/*<Script async
+	                        src="//book.timify.com/widget/widget.min.js"
+                          id="timify-widget"
+                          data-position="flexible"
+                          data-locale="de-de">
+                  </Script>*/}
+                
+               <iframe src="https://app.squarespacescheduling.com/schedule.php?owner=26518831" title="Termin vereinbaren" width="100%" height="800" frameBorder="0"></iframe><script async src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></script>
+                              
+                {/*<Iframe src='https://app.tablein.com/widget?restaurant_id=10788157&show-info=1' className='mt-5 mb-3 w-11/12 h-96'>
 
-                  <div className="mt-4 grid items-stretch justify-center gap-y-4 lg:grid-cols-2 lg:justify-around lg:gap-x-10 ">
+                          </Iframe>*/}
+
+                {/*<Iframe src='https://book.timify.com?accountId=62a8653b6249513136086cf4&fullscreen=1&hideCloseButton=1&showGuestBookingForm=1&locale=de-de' className='mt-5 mb-3 w-11/12 h-96'>
+
+                        </Iframe>*/}
+
+<div
+	className="timify-button mx-auto text-center text-xl text-slate-50 bg-lime-700 hover:bg-lime-500 py-2 rounded-2xl w-3/12 cursor-pointer"
+	data-account-id="62a8653b6249513136086cf4"
+	data-show-guest-booking-form="true"
+>Termin online buchen</div>
+                
+                
+
+                  <div className="mt-0">
                     <button
                       type="button"
-                      className="inline-flex justify-center rounded-md border border-transparent bg-cyan-100 px-4 py-2 text-xl font-medium text-cyan-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                      className="inline-flex justify-center rounded-md border border-transparent bg-cyan-100 px-4 py-2 text-sm font-medium text-cyan-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                       onClick={closeModal}
                     >
                       zurück
                     </button>
-                    <button
-                      type="button"
-                      className="inline-flex justify-center rounded-md border border-transparent bg-amber-700 px-4 py-2 text-xl font-medium text-slate-50 hover:bg-amber-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-800 focus-visible:ring-offset-2"
-                      onClick={closeModal}
-                    >
-                      Reservation
-                    </button>
                   </div>
-                </Dialog.Panel>
+          
+                           
+                
+                             </Dialog.Panel>
               </Transition.Child>
             </div>
           </div>

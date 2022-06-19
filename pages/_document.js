@@ -1,11 +1,15 @@
 /* eslint-disable prettier/prettier */
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
+
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="en" className="scroll-smooth">
         <Head>
+
+
+
           <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/apple-touch-icon.png" />
           <link
             rel="icon"
@@ -14,7 +18,8 @@ class MyDocument extends Document {
             href="/static/favicons/favicon-32x32.png"
           />
 
-  
+<script src="https://embed.acuityscheduling.com/embed/button/26498149.js" async></script>
+
           <link
             rel="icon"
             type="image/png"
@@ -30,7 +35,8 @@ class MyDocument extends Document {
         <body className="bg-slate-700 text-black antialiased dark:bg-gray-900 dark:text-white">
           <Main />
           <NextScript />
-          
+
+
           </body>
       </Html>
     )

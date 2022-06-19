@@ -2,10 +2,10 @@
 import React from 'react'
 import Image from 'next/image'
 import Modale04 from '../components/Modale/Modal04.js'
-
+import { Button } from 'primereact/button'
 const events = () => {
   return (
-    <section className="flex flex-col items-stretch justify-center border-t border-amber-500">
+    <><section className="flex flex-col items-stretch justify-center border-t border-amber-500">
       <main className="flex-1">
         <div className=" mx-auto px-4">
           <div className="-mx-4 flex flex-wrap items-center bg-slate-800    lg:pb-16">
@@ -19,19 +19,19 @@ const events = () => {
               </p>
               <Modale04></Modale04>
             </div>
-            <div className="mt-20 w-full  px-4 md:w-1/2">
+            <div className="mt-5 mb-5 w-96 px-4 lg:mt-20">
               <Image
-                height="499"
-                width="766"
+                height="361"
+                width="277"
                 layout="responsive"
-                src="/ballons2.png"
-                alt="Event Illustration"
-              />
+                src="/Vernissage.jpg"
+                alt="Event Illustration" />
             </div>
           </div>
         </div>
       </main>
     </section>
+   </>
   )
 }
 

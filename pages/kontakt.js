@@ -6,10 +6,12 @@ import LogoAlt from '../components/icons/svg/SVGLogoAlt'
 import Modale01 from '../components/Modale/Modal01'
 import Modale02 from '../components/Modale/Modal02'
 
+
+
 const kontakt = () => {
   return (
     <>
-      <section className="h-[166vh] overflow-hidden border-t-2 border-amber-400 bg-[#060716] bg-[url('/nightcity.png')] bg-cover bg-center bg-no-repeat">
+      <section className=" mx-auto h-[150vh] w-full bg-slate-900/70 bg-[url('/west-side-story.png')] lg:bg-[length:100%_100%] lg:bg-no-repeat">
         <main className="flex w-full flex-col place-items-center justify-center">
           <div className="flex-1  ">
             <div className=" mx-auto grid w-full grid-cols-1 items-stretch justify-center gap-y-10">
@@ -45,7 +47,7 @@ const kontakt = () => {
                     height="900"
                     width="955"
                     layout="responsive"
-                  />
+                  />wwwwwwwwwwwwwwww
                   <h1 className="mt-2 mb-2 text-center text-xs text-gray-100">
                     Illustration Altstadt Freiburg{' '}
                   </h1>
@@ -80,6 +82,7 @@ const kontakt = () => {
                   <Modale02></Modale02>
                 </div>
               </div>
+              
             </div>
           </div>
         </main>

@@ -24,7 +24,7 @@ export default function Modal04() {
           onClick={openModal}
           className="fo cus-visible:ring-opacity-75 rounded-md bg-orange-500 bg-opacity-80 px-4 py-2 text-2xl font-medium text-white hover:bg-opacity-60 focus:outline-none focus-visible:ring-2                           focus-visible:ring-white"
         >
-          more Information
+          $ Information
         </button>
       </div>
 
@@ -39,7 +39,7 @@ export default function Modal04() {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Dialog.Overlay className="fixed inset-0 bg-yellow-700/75" />
+            <Dialog.Overlay className="fixed inset-0 bg-slate-700/75" />
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">
@@ -53,7 +53,7 @@ export default function Modal04() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="border-gray-100-500 w-full max-w-md transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="border-gray-100-500 w-full max-w-2xl transform overflow-hidden rounded-2xl border bg-slate-900 p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
                     className="text-3xl font-medium leading-10 text-amber-500 lg:text-9xl"
