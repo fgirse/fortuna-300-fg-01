@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import SocialIcon from 'components/social-icons'
 import Image from 'components/Image'
 import { PageSEO } from 'components/SEO'
@@ -33,7 +34,7 @@ export default function AuthorLayout({ children, frontMatter }) {
               <SocialIcon kind="twitter" href={twitter} />
             </div>
           </div>
-          <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">{children}</div>
+          <div className="dark:prose-dark prose max-w-none pt-8 pb-8  xl:col-span-2">{children}</div>
         </div>
       </div>
     </>
