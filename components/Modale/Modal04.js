@@ -3,7 +3,7 @@ import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
 import Image from 'next/image'
 import Map from '../simpleMap'
-import LogoLeckerladen from '../../components/icons/svg/SVGLogoLeckerladen'
+import LogoLeckerladen from '../icons/svg/SVGLogoLeckerladen'
 
 export default function Modal04() {
   const [isOpen, setIsOpen] = useState(false)

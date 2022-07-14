@@ -37,7 +37,7 @@ export default function Modal01() {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Dialog.Overlay className="fixed inset-0  bg-yellow-700/75" />
+            <Dialog.Overlay className="fixed inset-0  bg-slate-700/75" />
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">

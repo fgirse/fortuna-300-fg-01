@@ -1,41 +1,48 @@
 /* eslint-disable prettier/prettier */
-import '@/css/tailwind.css'
-import '@/css/prism.css'
-import '../css/swiper.css'
+import '../css/tailwind.css'
+import '../css/prism.css'
+import "../css/swiper.css"
 import 'katex/dist/katex.css'
+import styles from "../styles/Home.module.css"
 
 import '@fontsource/inter/variable-full.css'
-import { useEffect } from 'react'
+import { SessionProvider } from "next-auth/react"
+
 import { ThemeProvider } from 'next-themes'
-import siteMetadata from '@/data/siteMetadata'
-import Analytics from '@/components/analytics'
-import LayoutWrapper from '@/components/LayoutWrapper'
-import { ClientReload } from '@/components/ClientReload'
-import Script from 'next/script'
 import Head from 'next/head'
 
-const isDevelopment = process.env.NODE_ENV === 'development'
-const isSocket = process.env.SOCKET
+import siteMetadata from '../data/siteMetadata'
+import Analytics from '../components/analytics'
+import LayoutWrapper from '../components/LayoutWrapper'
+import { ClientReload } from '../components/ClientReload'
 
-export default function App({ Component, pageProps }) {
-  useEffect(() => {
-    import('tw-elements')
-  }, [])
 
-  return (
-    <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
-      <Head>
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <script async src='https://app.tablein.com/sites/all/modules/custom/cumo_widget/js/code_outside_iframe_button.js?v2' type='text/javascript'></script>
 
-            
+  export default function App({
+    Component,
+    pageProps: { session, ...pageProps },
 
-      </Head>
-      {isDevelopment && isSocket && <ClientReload />}
-      <Analytics />
-      <LayoutWrapper>
-        <Component {...pageProps} />
-      </LayoutWrapper>
-    </ThemeProvider>
-  )
-}
+
+            }) {
+              return (
+                
+                <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
+                    <SessionProvider session={session}>
+                  <LayoutWrapper>
+                  <Component {...pageProps} />
+                  </LayoutWrapper>
+                  </SessionProvider>
+
+
+                </ThemeProvider>
+                
+              )
+            }
+
+
+  
+    
+      
+      
+     
+  

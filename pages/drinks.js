@@ -8,7 +8,7 @@ import Ganter from "../components/icons/svg/SVGGanter"
 import Flens from "../components/icons/svg/SVGFlensburger"
 import Logo from '../components/icons/svg/SvgLogoNeu'
 import MenuItem  from '../components/Menuitem/MenuItem.jsx';
-import SubHeading from "@/components/SubHeading/SubHeading";
+import SubHeading from "../components/SubHeading/SubHeading";
 import { data } from '../constants';
 import { images } from '../constants';
 import LogoAlt from "../components/icons/svg/SVGLogoAlt"

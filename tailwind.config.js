@@ -170,8 +170,11 @@ module.exports = {
     },
   },
   plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography'),
-    require('tw-elements/dist/plugin'),
-  ],
-}
+    // Other plugins
+    require('tailwindcss-animatecss')({
+          classes: ['animate__animated', 'animate__fadeIn', 'animate__bounceIn', ],
+          settings: {},
+          variants: [],
+        }),
+      ]
+     }

@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React from 'react'
-import HerokontaktAnimated from '@/components/Animationen/HerokontaktAnimated'
+import HerokontaktAnimated from '../components/Animationen/HerokontaktAnimated'
 import Image from 'next/image'
 import LogoAlt from '../components/icons/svg/SVGLogoAlt'
 import Modale01 from '../components/Modale/Modal01'
@@ -11,9 +11,9 @@ import Modale02 from '../components/Modale/Modal02'
 const kontakt = () => {
   return (
     <>
-      <section className=" mx-auto h-[150vh] w-full bg-slate-900/70 bg-[url('/west-side-story.png')] lg:bg-[length:100%_100%] lg:bg-no-repeat">
+      <section className=" mx-auto h-[170vh] w-full bg-slate-900/70 bg-[url('/west-side-story.png')] lg:bg-[length:100%_100%] lg:bg-no-repeat">
         <main className="flex w-full flex-col place-items-center justify-center">
-          <div className="flex-1  ">
+          <div className="flex-1 flex-grow ">
             <div className=" mx-auto grid w-full grid-cols-1 items-stretch justify-center gap-y-10">
               <HerokontaktAnimated />
               <div className="-mt-20 flex w-full flex-col items-center justify-center lg:w-11/12">
@@ -47,7 +47,7 @@ const kontakt = () => {
                     height="900"
                     width="955"
                     layout="responsive"
-                  />wwwwwwwwwwwwwwww
+                  />
                   <h1 className="mt-2 mb-2 text-center text-xs text-gray-100">
                     Illustration Altstadt Freiburg{' '}
                   </h1>
@@ -69,7 +69,7 @@ const kontakt = () => {
                 <h1 className="text-3xl text-orange-300 lg:text-xl">Linie 1 3 + 5</h1>
               </div>
 
-              <p className="mx-auto w-9/12 text-justify text-sm text-gray-200 sm:text-lg md:max-w-md md:text-center lg:text-2xl">
+              <p className="bg-white/25 py-5 mt-36 rounded-xl  mx-auto w-9/12 text-justify text-sm text-gray-200 sm:text-lg md:max-w-md md:text-center lg:text-2xl">
                 Sie finden uns entweder in der Kartenillustration der Freiburger Altstadt oder ganz
                 professionell in der Karte von OpenStreet-Map !
               </p>
@@ -78,7 +78,7 @@ const kontakt = () => {
                 <div className="mx-auto mt-3 w-60">
                   <Modale01></Modale01>
                 </div>
-                <div className="mx-auto mb-5 mt-3 w-60">
+                <div className="mx-auto mb-5 mt-3 ">
                   <Modale02></Modale02>
                 </div>
               </div>

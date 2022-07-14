@@ -1,7 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import team from 'pages/team'
 import { data } from 'autoprefixer'
 import Image from 'next/image'
 

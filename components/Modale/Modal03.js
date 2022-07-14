@@ -67,14 +67,14 @@ export default function Modal02() {
                   </div>  
                   {/*<Script async src='https://app.tablein.com/sites/all/modules/custom/cumo_widget/js/code_outside_iframe.js?v2' type='text/javascript'></Script>*/}
         
-                  {/*<Script async
+                  <Script async
 	                        src="//book.timify.com/widget/widget.min.js"
                           id="timify-widget"
                           data-position="flexible"
                           data-locale="de-de">
-                  </Script>*/}
+                  </Script>
                 
-               <iframe src="https://app.squarespacescheduling.com/schedule.php?owner=26518831" title="Termin vereinbaren" width="100%" height="800" frameBorder="0"></iframe><script async src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></script>
+    
                               
                 {/*<Iframe src='https://app.tablein.com/widget?restaurant_id=10788157&show-info=1' className='mt-5 mb-3 w-11/12 h-96'>
 

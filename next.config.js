@@ -46,7 +46,7 @@ const securityHeaders = [
 
 module.exports = withBundleAnalyzer({
   reactStrictMode: true,
-  pageExtensions: ['js', 'jsx', 'md', 'mdx'],
+  pageExtensions: ['js', 'tsx','jsx', 'md', 'mdx'],
   eslint: {
     dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
   },
@@ -67,8 +67,10 @@ module.exports = withBundleAnalyzer({
       test: /\.svg$/,
       use: ['@svgr/webpack'],
     })
+    
 
         if (!dev && !isServer) {
+          
       // Replace React with Preact only in client production build
       Object.assign(config.resolve.alias, {
         'react/jsx-runtime.js': 'preact/compat/jsx-runtime',

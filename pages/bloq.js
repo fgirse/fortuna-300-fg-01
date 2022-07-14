@@ -1,8 +1,8 @@
 /* eslint-disable prettier/prettier */
 import React from 'react'
-import Modale03 from '@/components/Modale/Modal03'
+import Modale03 from 'components/Modale/Modal03'
 import Hero2Animated from '../components/Animationen/HeroTimeline'
-import Link from '@/components/Link'
+import Link from 'components/Link'
 
 export default function Bloq() {
   return (

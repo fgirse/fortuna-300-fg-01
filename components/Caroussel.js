@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable prettier/prettier */
-import Layout from '../components/Layout'
+import Layout from './Layout'
 import Image from 'next/image'
 
 

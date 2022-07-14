@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
-import siteMetadata from '@/data/siteMetadata'
-import headerNavLinks from '@/data/headerNavLinks'
+import siteMetadata from '../data/siteMetadata'
+import headerNavLinks from '../data/headerNavLinks'
 import Logo from '../data/SvgLogoNeu'
 import Link from './Link'
 import SectionContainer from './SectionContainer'
@@ -13,11 +13,11 @@ import Image from 'next/image'
 const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
-      <div className=" flex h-screen flex-col justify-between">
-        <Infosection />
-        <header className="flex items-center justify-between bg-slate-800 py-3">
+      <Infosection></Infosection>
+      <div className="bg-slate-900 flex w-full h-screen flex-col justify-between">
+        <header className="lg:mxx-auto lg:w-full lg:bg-[url('/Wood.svg')] lg:bg-no-repeat lg:bg-cover flex items-center justify-between py-1">
           <div>
-            {/*} <Link href="/" aria-label={siteMetadata.headerTitle}>
+           {/*} <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
                 <div className="mr-3">
                   <Logo />
@@ -30,32 +30,27 @@ const LayoutWrapper = ({ children }) => {
                   siteMetadata.headerTitle
                 )}
               </div>
-            </Link>*/}
+                </Link>*/}
           </div>
-          
-          <div className="bg-slate-900 flex flex-wrap items-end text-base leading-5">
-              <div className="hidden lg:flex flex-row justify-center items-center">
-                {headerNavLinks.map((link) => (
-                  <Link
-                    key={link.title}
-                    href={link.href}
-                    className="py-5 text-gray-50 font-bold uppercase text-center hover:text-slate-200 dark:text-gray-100 dark:hover:text-sky-700 sm:p-4 lg:text-[.8rem] xl:text-[1.33rem] 2xl:text-[1.333rem]"
-                  >
-                    <div className='w-24 '>
-                      <Image className="hover:transform  hover:-translate hover:scale-110" src="/bulleye.png" height="619" width="699" layout="responsive" alt="Illustration" />
-
+          <div className="flex items-center text-base leading-2">
+            <div className="hidden sm:flex flex-row justify-start items-stretch">
+              {headerNavLinks.map((link) => (
+                <Link
+                  key={link.title}
+                  href={link.href}
+                  className="p-1 font-bold uppercase text-slate-50 hover:text-amber-400 lg:text-[1.33rem] 2xl:text-[1.85rem] dark:text-gray-100 sm:p-4"
+                >
+                  <div className='lg:w-20 xl:w-24'>
+                  <Image className="hover:transform  hover:-translate hover:-translate-y-1 hover:scale-110" src="/bulleye.svg" height="840" width="840" layout="responsive" alt="Illustration" />
                   </div>
-                    {link.title}
-                  </Link>
-                 
-                ))}
-                 
-              </div>
-              
-              <ThemeSwitch />
-              <MobileNav />
+                  {link.icon}
+                  {link.title}
+                </Link>
+              ))}
             </div>
-   
+            <ThemeSwitch />
+            <MobileNav />
+          </div>
         </header>
         <main className="mb-auto">{children}</main>
         <Footer />
